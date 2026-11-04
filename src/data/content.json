@@ -1,0 +1,928 @@
+{
+    "products": [
+        {
+            "id": "coloured-adhesive-tape",
+            "category": "adhesive-tape",
+            "subcategory": "coloured-tape",
+            "title": "Coloured Adhesive Tape",
+            "description": "Coloured adhesive tape for visible seals, package identification and colour-coded packing tasks.",
+            "image": "assets/images/products/adhesive-tape/colored adhesive tape.jpg",
+            "profile": "tape",
+            "details": {
+                "Format": "Adhesive tape roll",
+                "Appearance": "Coloured",
+                "Typical uses": "Package identification, colour coding and everyday sealing"
+            }
+        },
+        {
+            "id": "transparent-bonding-tape",
+            "category": "adhesive-tape",
+            "subcategory": "bonding-tape",
+            "title": "Transparent Bonding Tape",
+            "description": "Transparent bonding tape for joining materials where a discreet bond line is preferred. Select the construction to suit the surfaces and load.",
+            "image": "assets/images/products/adhesive-tape/Transparent Bonding Tape.png",
+            "profile": "bonding",
+            "details": {
+                "Format": "Bonding tape roll",
+                "Appearance": "Transparent",
+                "Typical uses": "Joining and securing components with a less visible bond line"
+            }
+        },
+        {
+            "id": "custom-adhesive-tape",
+            "category": "adhesive-tape",
+            "subcategory": "custom-tape",
+            "title": "Custom Adhesive Tape",
+            "description": "Adhesive tape specified around your assembly or securing task. Share the dimensions, surfaces and construction needed for the job.",
+            "image": "assets/images/products/adhesive-tape/Custom Adhesive Tape.png",
+            "profile": "bonding",
+            "details": {
+                "Product type": "Adhesive tape for a specified application",
+                "Specification focus": "Width, thickness, backing and adhesive construction",
+                "Typical uses": "Component bonding and securing"
+            }
+        },
+        {
+            "id": "bonding-tape",
+            "category": "adhesive-tape",
+            "subcategory": "bonding-tape",
+            "title": "Bonding Tape",
+            "description": "Bonding tape for joining and securing materials in assembly work. Surface finish, joint design and service conditions guide the selection.",
+            "image": "assets/images/products/adhesive-tape/Bonding Tape.png",
+            "profile": "bonding",
+            "details": {
+                "Format": "Bonding tape roll",
+                "Application": "Joining two surfaces",
+                "Selection factors": "Substrate, joint gap, load and service temperature"
+            }
+        },
+        {
+            "id": "clear-tape-roll",
+            "category": "adhesive-tape",
+            "subcategory": "clear-tape",
+            "title": "Clear Tape",
+            "description": "Clear adhesive tape for wrapping, light sealing and everyday office tasks where the underlying surface should remain visible.",
+            "image": "assets/images/products/adhesive-tape/Clear Tape.png",
+            "profile": "tape",
+            "details": {
+                "Format": "Adhesive tape roll",
+                "Appearance": "Clear",
+                "Typical uses": "Wrapping, light sealing and office work"
+            }
+        },
+        {
+            "id": "bopp-packing-tape",
+            "category": "adhesive-tape",
+            "subcategory": "packing-tape",
+            "title": "BOPP Packing Tape",
+            "description": "BOPP film packing tape for carton closure and dispatch packing. Choose the roll format for hand application or your sealing equipment.",
+            "image": "assets/images/products/adhesive-tape/BOPP Packing Tape.png",
+            "profile": "packing",
+            "details": {
+                "Backing": "Biaxially oriented polypropylene (BOPP) film",
+                "Format": "Packing tape roll",
+                "Typical uses": "Carton sealing and parcel packing"
+            }
+        },
+        {
+            "id": "custom-packing-tape",
+            "category": "adhesive-tape",
+            "subcategory": "custom-tape",
+            "title": "Custom Packing Tape",
+            "description": "Packing tape for a specified carton-sealing job. Include any logo, message or colour requirements with your enquiry.",
+            "image": "assets/images/products/adhesive-tape/Custom Packing Tape.png",
+            "profile": "packing",
+            "details": {
+                "Format": "Packing tape roll",
+                "Typical uses": "Carton closure and package identification",
+                "Design brief": "Provide artwork, print colours and repeat layout when requesting printed tape"
+            }
+        },
+        {
+            "id": "general-purpose-adhesive-tape",
+            "category": "adhesive-tape",
+            "subcategory": "general-purpose-tape",
+            "title": "General-Purpose Adhesive Tape",
+            "description": "Adhesive tape for routine securing, wrapping and light packing. Match the tape to the surface and any clean-removal requirement.",
+            "image": "assets/images/products/adhesive-tape/General-Purpose Adhesive Tape.png",
+            "profile": "tape",
+            "details": {
+                "Format": "Adhesive tape roll",
+                "Typical uses": "Routine securing, wrapping and light packing",
+                "Selection factors": "Surface material, holding requirement and removability"
+            }
+        },
+        {
+            "id": "direct-thermal-barcode-label-rolls",
+            "category": "thermal-paper",
+            "subcategory": "barcode-labels",
+            "title": "Direct Thermal Barcode Label Rolls",
+            "description": "Heat-sensitive label rolls for barcode and product identification printing on compatible direct thermal label printers.",
+            "image": "assets/images/products/thermal-paper/Direct Thermal Barcode Label Rolls.png",
+            "profile": "label",
+            "details": {
+                "Media format": "Labels on a roll",
+                "Print method": "Direct thermal",
+                "Ribbon requirement": "No ribbon required",
+                "Typical uses": "Barcodes, stock identification and product labels"
+            }
+        },
+        {
+            "id": "thermal-paper-rolls",
+            "category": "thermal-paper",
+            "subcategory": "thermal-paper-rolls",
+            "title": "Thermal Paper Rolls",
+            "description": "Continuous thermal paper rolls for receipts and transaction records. The heat-sensitive surface prints directly without ink or a ribbon.",
+            "image": "assets/images/products/thermal-paper/Thermal Paper Rolls.png",
+            "profile": "receipt",
+            "details": {
+                "Media format": "Continuous receipt paper roll",
+                "Print method": "Direct thermal",
+                "Ribbon requirement": "No ribbon required",
+                "Typical uses": "Transaction receipts and payment records"
+            }
+        },
+        {
+            "id": "pos-receipt-thermal-rolls",
+            "category": "thermal-paper",
+            "subcategory": "receipt-rolls",
+            "title": "POS Receipt Thermal Rolls",
+            "description": "Thermal receipt rolls for point-of-sale checkout printers. Match the roll dimensions to the till or receipt printer before ordering.",
+            "image": "assets/images/products/thermal-paper/POS Receipt Thermal Rolls.png",
+            "profile": "receipt",
+            "details": {
+                "Media format": "Continuous receipt paper roll",
+                "Print method": "Direct thermal",
+                "Ribbon requirement": "No ribbon required",
+                "Typical uses": "Retail checkout and hospitality receipts"
+            }
+        },
+        {
+            "id": "custom-thermal-label-roll",
+            "category": "thermal-paper",
+            "subcategory": "custom-labels",
+            "title": "Custom Thermal Label Roll",
+            "description": "Thermal label rolls specified around your label layout and printer. Include the finished label dimensions, colour and any preprinted artwork.",
+            "image": "assets/images/products/thermal-paper/Custom Thermal Label Roll.png",
+            "profile": "label",
+            "details": {
+                "Media format": "Thermal labels on a roll",
+                "Print method": "Direct thermal",
+                "Specification focus": "Label shape, dimensions, colour and layout",
+                "Typical uses": "Product identification and application-specific labelling"
+            }
+        },
+        {
+            "id": "coloured-adhesive-thermal-label-rolls",
+            "category": "thermal-paper",
+            "subcategory": "coloured-labels",
+            "title": "Coloured Adhesive Thermal Label Rolls",
+            "description": "Coloured self-adhesive thermal labels for organising stock and distinguishing product groups. Choose a shade that keeps printed information readable.",
+            "image": "assets/images/products/thermal-paper/Coloured Adhesive Thermal Label Rolls.png",
+            "profile": "label",
+            "details": {
+                "Media format": "Self-adhesive labels on a roll",
+                "Face stock": "Coloured thermal paper",
+                "Print method": "Direct thermal",
+                "Typical uses": "Colour-coded stock and product identification"
+            }
+        },
+        {
+            "id": "supermarket-price-label-rolls",
+            "category": "thermal-paper",
+            "subcategory": "price-labels",
+            "title": "Supermarket Price Label Rolls",
+            "description": "Thermal label rolls for retail price and product information. Label dimensions and sensor layout need to match the labelling equipment.",
+            "image": "assets/images/products/thermal-paper/Supermarket Price Label Rolls.png",
+            "profile": "label",
+            "details": {
+                "Media format": "Price labels on a roll",
+                "Print method": "Direct thermal",
+                "Typical uses": "Retail prices, product descriptions and barcode labels"
+            }
+        },
+        {
+            "id": "self-adhesive-label-rolls",
+            "category": "thermal-paper",
+            "subcategory": "self-adhesive-labels",
+            "title": "Self-Adhesive Label Rolls",
+            "description": "Self-adhesive label rolls for product and package identification. Choose the face stock and adhesive for your printer and application surface.",
+            "image": "assets/images/products/thermal-paper/Self-Adhesive Label Rolls.png",
+            "profile": "adhesive-label",
+            "details": {
+                "Media format": "Self-adhesive labels on a roll",
+                "Typical uses": "Product, stock and package identification",
+                "Print selection": "Specify direct thermal or thermal-transfer stock to match the printer"
+            }
+        },
+        {
+            "id": "thermal-paper-receipt-converting-rolls",
+            "category": "jumbo-paper-rolls",
+            "subcategory": "thermal-paper-rolls",
+            "title": "Thermal Paper Rolls for Receipt Converting",
+            "description": "Thermal parent rolls for slitting and rewinding into finished receipt rolls. Specify the web and winding requirements of your converting line.",
+            "image": "assets/images/products/jumbo-paper-rolls/Thermal Paper Rolls for Receipt Converting.png",
+            "profile": "thermal-parent",
+            "details": {
+                "Paper type": "Thermal paper",
+                "Supply format": "Parent roll for converting",
+                "Processing": "Slitting and rewinding",
+                "End product": "Finished receipt rolls"
+            }
+        },
+        {
+            "id": "coloured-jumbo-paper-rolls",
+            "category": "jumbo-paper-rolls",
+            "subcategory": "coloured-paper-rolls",
+            "title": "Coloured Jumbo Paper Rolls",
+            "description": "Coloured paper in jumbo-roll form for downstream converting. Specify the grade and shade around the finished paper product you need to produce.",
+            "image": "assets/images/products/jumbo-paper-rolls/Coloured Jumbo Paper Rolls.png",
+            "profile": "colour-parent",
+            "details": {
+                "Supply format": "Jumbo paper roll",
+                "Appearance": "Coloured paper",
+                "Processing": "Slitting, rewinding or sheeting to suit the selected grade"
+            }
+        },
+        {
+            "id": "red-jumbo-paper-rolls",
+            "category": "jumbo-paper-rolls",
+            "subcategory": "coloured-paper-rolls",
+            "title": "Red Jumbo Paper Rolls",
+            "description": "Red paper in jumbo-roll form for colour-specific converting work. Use a physical shade reference when colour consistency matters.",
+            "image": "assets/images/products/jumbo-paper-rolls/Red Jumbo Paper Rolls.png",
+            "profile": "colour-parent",
+            "details": {
+                "Supply format": "Jumbo paper roll",
+                "Colour": "Red",
+                "Processing": "Slitting, rewinding or sheeting to suit the selected grade"
+            }
+        },
+        {
+            "id": "thermal-paper-jumbo-rolls",
+            "category": "jumbo-paper-rolls",
+            "subcategory": "thermal-paper-rolls",
+            "title": "Thermal Paper Jumbo Rolls",
+            "description": "Jumbo thermal paper stock for receipt-roll production. Select paper grammage and roll geometry together to suit the converting line and finished roll.",
+            "image": "assets/images/products/jumbo-paper-rolls/Thermal Paper Jumbo Rolls.png",
+            "profile": "thermal-parent",
+            "details": {
+                "Paper type": "Thermal paper",
+                "Supply format": "Jumbo roll",
+                "Processing": "Slitting and rewinding",
+                "End product": "Thermal receipt rolls"
+            }
+        },
+        {
+            "id": "white-jumbo-thermal-paper-rolls",
+            "category": "jumbo-paper-rolls",
+            "subcategory": "thermal-paper-rolls",
+            "title": "White Jumbo Thermal Paper Rolls",
+            "description": "White thermal paper in jumbo rolls for converting into smaller receipt rolls. Specify coating orientation and machine handling limits with your order requirements.",
+            "image": "assets/images/products/jumbo-paper-rolls/White Jumbo Thermal Paper Rolls.png",
+            "profile": "thermal-parent",
+            "details": {
+                "Paper type": "Thermal paper",
+                "Colour": "White",
+                "Supply format": "Jumbo roll",
+                "Processing": "Slitting and rewinding into receipt rolls"
+            }
+        },
+        {
+            "id": "receipt-paper-parent-rolls",
+            "category": "jumbo-paper-rolls",
+            "subcategory": "thermal-paper-rolls",
+            "title": "Receipt Paper Parent Rolls",
+            "description": "Parent paper rolls for receipt converting operations. Provide the finished roll specification so the parent stock can be matched to the job.",
+            "image": "assets/images/products/jumbo-paper-rolls/Receipt Paper Parent Rolls.png",
+            "profile": "thermal-parent",
+            "details": {
+                "Supply format": "Parent roll",
+                "Processing": "Receipt-roll slitting and rewinding",
+                "End product": "Smaller rolls for receipt printers"
+            }
+        },
+        {
+            "id": "white-a4-copy-paper-green-pack",
+            "category": "printing-paper",
+            "subcategory": "office-copy-paper",
+            "title": "White A4 Copy Paper",
+            "description": "White A4 copy paper for letters, reports and everyday office documents. Select the grammage for your printer and document requirements.",
+            "image": "assets/images/products/printing-paper/White A4 Copy Paper.png",
+            "profile": "copy",
+            "details": {
+                "Sheet format": "A4",
+                "Nominal sheet dimensions": "210 x 297 mm",
+                "Colour": "White",
+                "Typical uses": "Letters, reports, copying and office documents"
+            }
+        },
+        {
+            "id": "a4-copy-paper-red-white-pack",
+            "category": "printing-paper",
+            "subcategory": "office-copy-paper",
+            "title": "A4 Copy Paper",
+            "description": "A4 copy paper for document reproduction and everyday printing. Check the selected grade against the printer media settings.",
+            "image": "assets/images/products/printing-paper/A4 Copy Paper.png",
+            "profile": "copy",
+            "details": {
+                "Sheet format": "A4",
+                "Nominal sheet dimensions": "210 x 297 mm",
+                "Supply format": "Cut sheets",
+                "Typical uses": "Photocopies and routine printed documents"
+            }
+        },
+        {
+            "id": "a4-paper-commercial-office",
+            "category": "printing-paper",
+            "subcategory": "office-copy-paper",
+            "title": "A4 Paper for Commercial and Office Use",
+            "description": "A4 sheets for business documents, training materials and office print runs. Specify the print process and packing quantity for your workflow.",
+            "image": "assets/images/products/printing-paper/A4 Paper for Commercial and Office Use.png",
+            "profile": "copy",
+            "details": {
+                "Sheet format": "A4",
+                "Nominal sheet dimensions": "210 x 297 mm",
+                "Supply format": "Cut sheets",
+                "Typical uses": "Business documents and training handouts"
+            }
+        },
+        {
+            "id": "everyday-office-copy-paper",
+            "category": "printing-paper",
+            "subcategory": "office-copy-paper",
+            "title": "Everyday Office Copy Paper",
+            "description": "Copy paper for everyday printing, copying and written office records. Choose the sheet format and weight to suit the equipment and task.",
+            "image": "assets/images/products/printing-paper/Everyday Office Copy Paper.png",
+            "profile": "copy",
+            "details": {
+                "Paper type": "Office copy paper",
+                "Supply format": "Cut sheets",
+                "Typical uses": "Everyday documents, photocopies and written records"
+            }
+        },
+        {
+            "id": "large-size-flat-paper",
+            "category": "printing-paper",
+            "subcategory": "large-size-flat-paper",
+            "title": "Large-Size Flat Paper",
+            "description": "Large-format paper sheets for press work and jobs that need space for trimming or multiple printed pieces. Specify the finished sheet and grain direction.",
+            "image": "assets/images/products/printing-paper/Large-Size Flat Paper.png",
+            "profile": "sheet",
+            "details": {
+                "Supply format": "Large flat sheets",
+                "Typical uses": "Print layouts, posters and sheet converting",
+                "Selection factors": "Press sheet size, grain direction and finishing allowance"
+            }
+        },
+        {
+            "id": "single-side-pe-coated-flat-paper",
+            "category": "printing-paper",
+            "subcategory": "large-size-flat-paper",
+            "title": "Single-Side PE-Coated Flat Paper",
+            "description": "Flat paper with polyethylene coating on one side for packaging and converting applications. Match the base sheet and coating to the intended forming or sealing process.",
+            "image": "assets/images/products/printing-paper/Single-Side PE-Coated Flat Paper.png",
+            "profile": "pe",
+            "details": {
+                "Supply format": "Flat sheets",
+                "Coating": "Polyethylene (PE)",
+                "Coated sides": "One side",
+                "Typical uses": "Packaging and sheet converting with a specified coated surface"
+            }
+        },
+        {
+            "id": "white-kraft-paper-sheets",
+            "category": "printing-paper",
+            "subcategory": "large-size-flat-paper",
+            "title": "White Kraft Paper Sheets",
+            "description": "White kraft paper sheets for wrapping, paper converting and print projects that call for a kraft substrate.",
+            "image": "assets/images/products/printing-paper/White Kraft Paper Sheets.png",
+            "profile": "sheet",
+            "details": {
+                "Paper type": "Kraft paper",
+                "Colour": "White",
+                "Supply format": "Cut sheets",
+                "Typical uses": "Wrapping, converting and suitable print work"
+            }
+        },
+        {
+            "id": "double-sided-cardboard",
+            "category": "printing-paper",
+            "subcategory": "large-size-flat-paper",
+            "title": "Double-Sided Cardboard",
+            "description": "Board sheets for projects that use both faces, including display pieces and presentation work. Specify the finish needed on each side.",
+            "image": "assets/images/products/printing-paper/Double-Sided Cardboard.png",
+            "profile": "board",
+            "details": {
+                "Supply format": "Board sheets",
+                "Face requirements": "Both sides used in the finished piece",
+                "Typical uses": "Display pieces, covers and presentation projects"
+            }
+        },
+        {
+            "id": "glossy-cardboard-sheets",
+            "category": "printing-paper",
+            "subcategory": "large-size-flat-paper",
+            "title": "Glossy Cardboard Sheets",
+            "description": "Glossy sheet stock for printed presentation pieces and promotional work. Select the sheet weight and thickness for the required rigidity.",
+            "image": "assets/images/products/printing-paper/Glossy Cardboard Sheets.png",
+            "profile": "board",
+            "details": {
+                "Supply format": "Flat sheets",
+                "Surface finish": "Glossy",
+                "Typical uses": "Promotional print and presentation pieces"
+            }
+        },
+        {
+            "id": "coloured-craft-copy-paper",
+            "category": "printing-paper",
+            "subcategory": "coloured-paper",
+            "title": "Coloured Craft and Copy Paper",
+            "description": "Coloured sheets for craft work, handouts and creative print projects. Choose the shade and weight for cutting, folding or printing.",
+            "image": "assets/images/products/printing-paper/Coloured Craft and Copy Paper.png",
+            "profile": "colour-sheet",
+            "details": {
+                "Supply format": "Cut sheets",
+                "Appearance": "Coloured paper",
+                "Typical uses": "Craft projects, handouts and creative printing"
+            }
+        },
+        {
+            "id": "coloured-a4-printing-paper",
+            "category": "printing-paper",
+            "subcategory": "coloured-paper",
+            "title": "Coloured A4 Printing Paper",
+            "description": "Coloured A4 paper for notices, handouts and colour-coded documents. Match the shade to your layout and the paper weight to your printer.",
+            "image": "assets/images/products/printing-paper/Coloured A4 Printing Pape.png",
+            "profile": "colour-sheet",
+            "details": {
+                "Sheet format": "A4",
+                "Nominal sheet dimensions": "210 x 297 mm",
+                "Appearance": "Coloured paper",
+                "Typical uses": "Notices, handouts and colour-coded documents"
+            }
+        }
+    ],
+    "product-categories": {
+        "printing-paper": {
+            "title": "Printing Paper",
+            "introduction": "Explore paper sheets for office documents, commercial printing, and creative projects.",
+            "filters": {
+                "all": "All",
+                "office-copy-paper": "Office & Copy Paper",
+                "large-size-flat-paper": "Large-Size Flat Paper",
+                "coloured-paper": "Coloured Paper"
+            },
+            "page": "printing-paper.php"
+        },
+        "thermal-paper": {
+            "title": "Thermal Paper",
+            "introduction": "Explore thermal paper and label rolls for receipts, product identification, and labelling applications.",
+            "page": "thermal-paper.php"
+        },
+        "jumbo-paper-rolls": {
+            "title": "Jumbo Paper Rolls",
+            "introduction": "Explore large paper rolls for converting, printing, and industrial processing.",
+            "filters": {
+                "all": "All",
+                "thermal-paper-rolls": "Thermal Paper Rolls",
+                "coloured-paper-rolls": "Coloured Paper Rolls"
+            },
+            "page": "jumbo-paper-rolls.php"
+        },
+        "adhesive-tape": {
+            "title": "Adhesive Tape",
+            "introduction": "Explore adhesive tapes for packing, sealing, and general business applications.",
+            "page": "adhesive-tape.php"
+        }
+    },
+    "product-detail-profiles": {
+        "tape": {
+            "selection": "Match the tape to the surface, load and application conditions. A trial on the actual material is useful before committing to a production order.",
+            "requirements": [
+                "Width in mm and length in m",
+                "Surface material and intended use",
+                "Required colour and quantity of rolls",
+                "Application temperature and removal requirements"
+            ]
+        },
+        "bonding": {
+            "selection": "Choose bonding tape around the two surfaces being joined, the joint gap and the load. Thickness and adhesive construction matter; colour alone does not establish strength.",
+            "requirements": [
+                "Materials being joined and surface finish",
+                "Tape width, length and thickness",
+                "Single- or double-sided construction needed",
+                "Load, temperature, indoor or outdoor use, and quantity"
+            ]
+        },
+        "packing": {
+            "selection": "Select tape for the carton surface, packed weight and sealing method. Check roll width and core fit against your hand dispenser or carton-sealing machine.",
+            "requirements": [
+                "Tape width in mm and roll length in m",
+                "Carton material and packed weight",
+                "Hand dispenser or machine application",
+                "Colour, artwork if required, and quantity"
+            ]
+        },
+        "receipt": {
+            "selection": "Match paper width, outside roll diameter and core size to the receipt printer. Roll diameter is not roll length: paper thickness and the core affect how much paper fits on a roll. Store thermal paper away from heat and direct sunlight.",
+            "requirements": [
+                "Printer make and model",
+                "Paper width and maximum outside diameter in mm",
+                "Core inside diameter and required roll length",
+                "Quantity of rolls and packing preference"
+            ]
+        },
+        "label": {
+            "selection": "Match label width and height, roll size and gap or black-mark sensing to the printer. Choose adhesive for the application surface and service conditions. Direct thermal stock prints without a ribbon; protect the printed image from excessive heat and light.",
+            "requirements": [
+                "Printer model and label width x height in mm",
+                "Core inside diameter, outside roll diameter and winding direction",
+                "Gap or black-mark sensing and labels per roll",
+                "Application surface, adhesive needs, colour and quantity"
+            ]
+        },
+        "adhesive-label": {
+            "selection": "Self-adhesive describes how the label attaches, not how it prints. Specify the face stock and print process first: thermal-transfer paper needs a matching ribbon, while direct thermal stock does not.",
+            "requirements": [
+                "Printer model and printing method",
+                "Label width x height, gap or black mark, and winding direction",
+                "Core size, maximum roll diameter and labels per roll",
+                "Application surface, adhesive requirements and quantity"
+            ]
+        },
+        "thermal-parent": {
+            "selection": "Match the parent roll to your slitter-rewinder: web width, core, maximum diameter and roll weight must suit the line. Specify coating-side orientation and the dimensions of the finished receipt rolls.",
+            "requirements": [
+                "Required grammage in g/m² and paper caliper if critical",
+                "Web width, maximum outside diameter and core inside diameter",
+                "Maximum roll weight and coating-side winding direction",
+                "Finished roll sizes, converting equipment and order tonnage"
+            ]
+        },
+        "colour-parent": {
+            "selection": "Specify the end product before selecting a coloured parent roll. Shade, paper grade and thickness affect the result; a colour sample is more reliable than a screen image.",
+            "requirements": [
+                "Paper grade, grammage and colour sample or reference",
+                "Web width, outside diameter and core inside diameter",
+                "Maximum roll weight and winding direction",
+                "Converting process, finished product and order tonnage"
+            ]
+        },
+        "copy": {
+            "selection": "Choose the sheet size and grammage supported by your printer. For two-sided documents, check opacity as well as weight. Keep unused sheets wrapped and dry to reduce curl and feeding problems.",
+            "requirements": [
+                "Sheet size and grammage in g/m²",
+                "Printer model or printing process",
+                "Single- or double-sided printing",
+                "Sheets per ream, reams per carton and order quantity"
+            ]
+        },
+        "sheet": {
+            "selection": "Match sheet dimensions, grain direction and grammage to the press and finishing process. Check caliper separately when folding, binding or feeding thicker stock.",
+            "requirements": [
+                "Sheet width x length in mm",
+                "Grammage and caliper where required",
+                "Printing process, grain direction and finishing operation",
+                "Sheets per pack and total quantity"
+            ]
+        },
+        "pe": {
+            "selection": "Specify the base paper and PE coating weight separately. Agree which side will be printed and how the sheet will be folded or sealed. Food-contact use needs documentation for the exact grade and intended application.",
+            "requirements": [
+                "Sheet dimensions and base-paper grammage",
+                "PE coating weight and required coating side",
+                "Printing, sealing and converting process",
+                "End use, any food-contact requirements and quantity"
+            ]
+        },
+        "board": {
+            "selection": "Choose board by stiffness, caliper and surface finish as well as grammage. Check press limits and trial creasing or folding for the intended finished piece.",
+            "requirements": [
+                "Sheet dimensions, grammage and caliper",
+                "Required finish on each side",
+                "Print process and folding or die-cutting needs",
+                "Packing preference and sheet quantity"
+            ]
+        },
+        "colour-sheet": {
+            "selection": "Choose the shade and sheet weight for the job. For printing, check the printer media limits and the contrast of the design against the coloured background.",
+            "requirements": [
+                "Sheet size and grammage",
+                "Colour reference and quantity per colour",
+                "Printer model or craft application",
+                "Sheets per pack and total quantity"
+            ]
+        }
+    },
+    "product-buying-notes": {
+        "white-a4-copy-paper-green-pack": [
+            "Planning office print work",
+            "For everyday documents, identify the printer, simplex or duplex use and the required sheet weight. If documents contain dense text or graphics on both sides, review the proposed grade for show-through rather than selecting by packaging alone.",
+            "Ask for the quoted grade, sheet count per ream, reams per carton and total quantity. The other A4 listings should be compared by their actual grade and SKU before treating them as different offers."
+        ],
+        "large-size-flat-paper": [
+            "Planning press and finishing work",
+            "Include the press sheet size and the final trimmed size. Grain direction, feed limits and the planned folding or binding operation can affect selection even where two sheets have the same grammage.",
+            "State whether dimensions are supplied-sheet or finished-piece dimensions. Agree trim allowances, grain and packing in the quotation; a large-format description does not establish any particular size."
+        ],
+        "single-side-pe-coated-flat-paper": [
+            "Reviewing a coated sheet",
+            "Describe what the base paper and the coated side each need to do. Printing, folding and sealing can place different demands on the surface. Provide the process and required orientation so the proposed construction can be assessed.",
+            "Request the base-paper weight and coating weight separately. If the intended use involves food, obtain documentation for the exact grade and conditions before approving it."
+        ],
+        "white-kraft-paper-sheets": [
+            "Matching kraft sheets to the job",
+            "Explain whether the sheet will be printed, folded, wrapped or otherwise converted. Appearance, finish and stiffness requirements should be discussed alongside dimensions and grammage.",
+            "A white surface does not establish coating, strength or food-contact suitability. Identify those requirements explicitly and agree the proposed material and any sample approval."
+        ],
+        "thermal-paper-rolls": [
+            "Replacing a receipt roll",
+            "Use the printer media specification to check width, maximum outside diameter, core and winding. Measure a full replacement roll where possible; a partly used roll cannot establish the original diameter.",
+            "Specify length and packing separately from diameter. Include any chemical declaration or image-life requirement so supporting documentation can be requested for the proposed grade."
+        ],
+        "direct-thermal-barcode-label-rolls": [
+            "Preparing a barcode label enquiry",
+            "Supply the printer model, label width and height, core, maximum roll diameter and sensor arrangement. Barcode readability also depends on the printed design, equipment and settings; assess the finished label in the intended workflow.",
+            "Describe the surface, application temperature and service conditions for the adhesive. Confirm direct-thermal media requirements rather than assuming that any self-adhesive label will work without a ribbon."
+        ],
+        "custom-thermal-label-roll": [
+            "Defining a custom label request",
+            "Separate the physical label specification from the artwork. Include label dimensions, printer media requirements, winding and quantity, then explain any preprinted elements or other custom work you want considered.",
+            "Custom construction, artwork feasibility, proof steps and minimum quantities need confirmation. Do not approve a roll on appearance alone without checking printer fit and the intended label surface."
+        ],
+        "thermal-paper-jumbo-rolls": [
+            "Preparing parent stock for converting",
+            "Start with the finished receipt specification and the converting line limits. Include web width, core, diameter, weight and coating orientation, together with the slitting and rewinding requirements.",
+            "Agree grade, tolerances, quotation units and handling arrangements. Similar thermal parent-roll listings should be compared using actual technical documents before assuming a material difference."
+        ],
+        "coloured-jumbo-paper-rolls": [
+            "Specifying coloured parent stock",
+            "Provide the colour reference, intended process and finished product alongside web width, grammage and roll geometry. Where consistency is important, use an agreed physical colour sample rather than a screen image.",
+            "Confirm the required grade and whether colour affects the print or converting process. Available shades, batch tolerances and order quantities belong in the quotation."
+        ],
+        "bopp-packing-tape": [
+            "Selecting carton-sealing tape",
+            "Identify carton material, packed weight and whether application uses a hand dispenser or sealing machine. BOPP describes the backing family; it does not by itself specify the adhesive, total thickness or performance.",
+            "Request the construction and roll dimensions for the proposed grade. Trial the tape on the actual carton and application process, including the intended service conditions."
+        ],
+        "custom-packing-tape": [
+            "Preparing a custom packing request",
+            "Describe the carton-sealing task first, then include any artwork, colour and repeat-layout requirements. Supply quantity and the intended application equipment so the request can be reviewed as a complete packaging specification.",
+            "Printing availability, proof approval, minimum order and lead time require confirmation. No particular print process or colour capability is promised by this listing."
+        ],
+        "bonding-tape": [
+            "Evaluating a bonding application",
+            "Name both materials and their finishes, and describe the joint geometry and load. Include temperature and indoor or outdoor exposure where relevant. Bonding is a different selection problem from closing a carton.",
+            "Discuss adhesive construction, thickness, preparation and trial conditions for the actual materials. The listing does not establish structural strength or a universal service-temperature range."
+        ]
+    },
+    "category-guidance": {
+        "printing-paper": {
+            "title": "Printing and Copy Paper for Business",
+            "description": "Explore copy paper, coloured sheets, coated paper and board. Send your size, grammage and quantity requirements for a quote.",
+            "families": [
+                [
+                    "Office and copy paper",
+                    "white-a4-copy-paper-green-pack",
+                    "Start with sheet format and printer media limits. For duplex documents, consider opacity and feeding behaviour as well as grammage. Confirm the actual grade and ream quantity before ordering."
+                ],
+                [
+                    "Large sheets and white kraft",
+                    "large-size-flat-paper",
+                    "Large-format sheets need dimensions and grain direction matched to the printing and finishing process. White kraft sheets are a separate material enquiry; confirm finish and the intended converting operation."
+                ],
+                [
+                    "Coated sheets",
+                    "single-side-pe-coated-flat-paper",
+                    "A PE coating changes the sheet surface. Specify the base sheet and coating separately, including the side to be printed or sealed. Food-contact suitability needs documentation for the exact application."
+                ],
+                [
+                    "Coloured paper and board",
+                    "coloured-a4-printing-paper",
+                    "Use a physical colour reference where appearance matters. For board, compare stiffness and caliper rather than treating grammage as a complete measure of thickness."
+                ]
+            ],
+            "questions": {
+                "What should I send for a quote?": "Include sheet dimensions, grammage, quantity, printing process and packing requirements. Add grain direction or caliper where your equipment requires them.",
+                "Can I choose by the product photograph?": "Use photographs to identify the listing, then confirm the grade and specifications. Pack artwork is not a guarantee of the exact stock or pack quantity.",
+                "Are all papers suitable for every printer?": "No. Check the printer or press media specification, including supported weight and coating. Ask to review the intended grade before a production order."
+            }
+        },
+        "thermal-paper": {
+            "title": "Thermal Paper Rolls and Labels",
+            "description": "Explore thermal receipt rolls and label rolls for business use. Check the details needed to match your printer and request a product quote.",
+            "families": [
+                [
+                    "Finished receipt rolls",
+                    "thermal-paper-rolls",
+                    "Receipt rolls fit inside a printer and produce continuous receipts. Confirm width, outside diameter and core dimensions together; a matching width alone does not establish compatibility."
+                ],
+                [
+                    "Barcode and product labels",
+                    "direct-thermal-barcode-label-rolls",
+                    "Labels require a match between the printer, label dimensions and sensor arrangement. Include adhesive requirements and surface conditions, not just the printed design."
+                ],
+                [
+                    "Custom and price labels",
+                    "custom-thermal-label-roll",
+                    "Explain label size, artwork and how the label will be used. For scale or supermarket labels, provide the exact device model and media requirements. Custom options must be agreed in the quotation."
+                ]
+            ],
+            "questions": {
+                "Do I need receipt rolls or jumbo rolls?": "Finished receipt rolls are printer consumables. Jumbo rolls are parent stock for converting equipment. See the jumbo category for slitting and rewinding requirements.",
+                "Are all self-adhesive labels direct thermal?": "No. Confirm the printing process for the proposed face stock. Thermal-transfer printing uses a ribbon; direct thermal printing requires heat-sensitive media.",
+                "Can you confirm a chemical or image-life claim?": "Request grade-specific documentation with your enquiry. The catalogue does not establish BPA-free, BPS-free, phenol-free or archival performance for an unspecified grade."
+            },
+            "guide": "guides/thermal-paper-roll-size.php",
+            "guideLabel": "How to measure a thermal paper roll"
+        },
+        "jumbo-paper-rolls": {
+            "title": "Jumbo Paper Rolls for Converting",
+            "description": "Explore thermal and coloured jumbo paper rolls for converting. Send your web width, core, grammage and order requirements to discuss suitable options.",
+            "families": [
+                [
+                    "Thermal parent stock",
+                    "thermal-paper-jumbo-rolls",
+                    "Parent rolls feed a converting line rather than a receipt printer. Define the finished product, coating orientation and machine limits before selecting the incoming roll specification."
+                ],
+                [
+                    "Receipt-converting enquiries",
+                    "thermal-paper-receipt-converting-rolls",
+                    "Supply the slitting plan, finished roll dimensions and quality requirements. Similar catalogue names do not establish equivalent grades; compare the quotation and technical documents."
+                ],
+                [
+                    "Coloured jumbo stock",
+                    "coloured-jumbo-paper-rolls",
+                    "Specify the paper grade and colour reference alongside roll geometry. For red or other shades, use an agreed physical sample where colour consistency matters."
+                ]
+            ],
+            "questions": {
+                "Which machine limits matter?": "Include maximum web width, outside diameter, core dimensions and roll weight, plus unwinding direction and handling constraints.",
+                "Is roll diameter enough to specify an order?": "No. Grammage, caliper, core and length affect the roll. Agree the quotation unit and tolerances rather than inferring weight or length from diameter.",
+                "Are samples or documentation available?": "State what you need for approval in the enquiry. Availability and grade-specific documentation must be confirmed before committing to a production order."
+            },
+            "guide": "guides/thermal-jumbo-roll-specifications.php",
+            "guideLabel": "Thermal jumbo roll specification checklist"
+        },
+        "adhesive-tape": {
+            "title": "Adhesive Tapes for Packing and Bonding",
+            "description": "Explore packing, bonding and custom tape options. Share your application, tape dimensions and quantity to request a quote from Kraus Papers.",
+            "families": [
+                [
+                    "Carton sealing",
+                    "bopp-packing-tape",
+                    "Choose packing tape around the carton surface, packed weight and sealing equipment. Confirm backing, adhesive, total thickness, roll width and length for the proposed grade."
+                ],
+                [
+                    "Bonding and assembly",
+                    "bonding-tape",
+                    "Bonding needs information about both surfaces, their finish, the joint and service conditions. Transparency or colour is not a strength specification. Trial the proposed construction on the actual materials."
+                ],
+                [
+                    "Clear and general-purpose tape",
+                    "clear-tape-roll",
+                    "Describe whether the task is office use, wrapping or packaging. Do not assume a general-purpose roll is equivalent to a specified carton-sealing or assembly tape."
+                ],
+                [
+                    "Custom tape requests",
+                    "custom-packing-tape",
+                    "For custom packing requests, include artwork and quantity where relevant. Printing, colours, proof arrangements and minimum quantities require confirmation. Keep these separate from custom bonding constructions."
+                ]
+            ],
+            "questions": {
+                "What makes two tapes different?": "Backing, adhesive and total thickness can differ even when the rolls look alike. Compare those details and the intended use in the quotation.",
+                "Can I use the same roll by hand or machine?": "Confirm roll and core dimensions against the dispenser or machine, together with the sealing process and application conditions.",
+                "What should a custom request include?": "Describe the task, surfaces, dimensions and quantity. For printed packaging, supply artwork requirements so feasibility and approval steps can be discussed."
+            }
+        }
+    },
+    "buyer-guides": {
+        "thermal-paper-roll-size": {
+            "title": "How to Measure a Thermal Paper Roll",
+            "description": "Measure receipt-roll width, outside diameter and core size, then check the printer requirements before requesting thermal paper.",
+            "category": "thermal-paper.php",
+            "categoryLabel": "Thermal Paper Rolls and Labels",
+            "product": "thermal-paper-rolls",
+            "sections": {
+                "Start with the printer specification": "<p>A replacement receipt roll needs to fit both the printer mechanism and its paper compartment. Begin with the printer make, model and media specification. An old roll can help you describe what you use, but it may not represent the maximum dimensions the printer supports.</p><p>Check the required printing process. A receipt printer that requires thermal media is different from an impact printer using a ribbon. For labels, also check the gap or black-mark sensor and label dimensions. This guide covers the physical measurements of a continuous receipt roll; it does not certify compatibility with a particular printer.</p>",
+                "Measure width across the paper": "<p>Width is the distance from one edge of the paper to the other, across the roll. Measure straight across, not diagonally, and record the unit in millimetres. Avoid including protruding core material in the paper-width measurement.</p><p>Use the printer manual to determine acceptable width and tolerances. Two rolls with the same nominal width may have different outside diameters or cores. Do not choose a replacement from width alone.</p>",
+                "Measure the outside diameter": "<p>The outside diameter is the distance across the full circular face of the roll, through its centre. Measure a new or full roll where possible. A partly used roll will understate the original diameter.</p><p>Compare the result with the maximum permitted by the printer. A roll that is too large may prevent the cover from closing or interfere with feeding. Do not force a roll into the compartment. Record whether your measurement describes an existing roll or a maximum equipment limit.</p>",
+                "Check the core and mounting arrangement": "<p>Measure the opening through the centre of the core: this is the core inside diameter. If the equipment specification also gives an outside core diameter or spindle requirement, record that separately. Check whether the printer uses a spindle, drop-in loading or another mounting arrangement.</p><p>Do not assume that an apparently coreless roll can replace a cored roll, or the reverse. The printer manufacturer's loading instructions take precedence. Include a photograph or the media specification when the mounting arrangement is unclear.</p>",
+                "Treat length and paper grade separately": "<p>Roll length describes the amount of paper, not the diameter. The same outside diameter can contain different lengths when paper thickness or core dimensions differ. Ask for the actual quoted length rather than estimating it from a photograph or roll diameter.</p><p>Grammage measures mass per area; it is not the same measurement as caliper, which describes thickness. Ask which grade is being quoted and request supporting documentation for chemical composition or image-life requirements. A generic thermal-paper description does not establish those properties.</p>",
+                "Confirm loading and storage requirements": "<p>Check the required winding and printable side against the printer instructions. Loading media the wrong way can prevent a usable image even when the physical dimensions fit. Test the proposed grade and settings before placing a substantial production order.</p><p>Keep unused rolls in their protective packaging and follow the grade's handling guidance. Heat, sunlight and contact with unsuitable substances can affect thermal media. Where receipts need to remain legible for a defined period, agree the requirement and obtain grade-specific evidence.</p>",
+                "Prepare a useful enquiry": "<ul><li>Printer make and model, with the media specification if available.</li><li>Paper width and maximum outside diameter in millimetres.</li><li>Core inside diameter, any outside core limit and loading arrangement.</li><li>Required roll length, grade and winding information.</li><li>Number of rolls, preferred packing and intended use.</li><li>Any documented chemical or image-retention requirements.</li></ul><p>Distinguish measured values from requested limits. If a dimension is unknown, identify it as unknown so it can be discussed. Available sizes, packing and quantities are confirmed in the quotation; this checklist is not a list of stocked variants.</p>"
+            }
+        },
+        "thermal-jumbo-roll-specifications": {
+            "title": "Thermal Jumbo Roll Specifications for Converting",
+            "description": "Prepare web width, grammage, core, diameter, winding and handling requirements for a thermal parent-roll enquiry.",
+            "category": "jumbo-paper-rolls.php",
+            "categoryLabel": "Jumbo Paper Rolls for Converting",
+            "product": "thermal-paper-jumbo-rolls",
+            "sections": {
+                "Define the finished product first": "<p>Thermal jumbo rolls are parent stock for converting equipment. They are not finished rolls intended to fit a point-of-sale printer. Start with the receipt or other finished product you want to produce, its dimensions and its performance requirements.</p><p>Provide the converting process and equipment limits. A suitable incoming roll must work with the unwinder, slitter and rewinder as well as the finished product specification. Similar product names are not proof that two grades or formats are interchangeable.</p>",
+                "Specify grammage and grade": "<p>Record the required grammage in grams per square metre and identify the grade where known. Include caliper if the converting process or finished-roll design depends on thickness. Grammage alone cannot predict the length that will fit within a given finished-roll diameter.</p><p>For thermal material, identify coating and imaging requirements. Ask for documentation for the actual proposed grade if the application requires a chemical declaration, durability claim or other specific property. Do not transfer a claim from a different manufacturer's sheet to an unspecified grade.</p>",
+                "Match web width to the slitting plan": "<p>Web width is the width of the incoming sheet of paper wound on the roll. Provide the required width and tolerance, together with the intended finished widths. The converting operator should confirm the slitting layout and any allowance for edge trim.</p><p>For example, the total of the finished widths alone does not establish the required parent width if the process also needs trim or other allowances. Agree the layout against the machine and process specification rather than assuming every theoretical combination is practical.</p>",
+                "Confirm roll geometry and weight limits": "<p>Record maximum outside diameter, core inside diameter and any core construction requirements. Include maximum permissible roll weight and any restrictions imposed by the chuck, shaft or lifting arrangement.</p><p>A roll can meet the width requirement but exceed a weight or diameter limit. Check each constraint independently. Roll length, diameter and mass are related to material properties and core dimensions; obtain the values needed for the order rather than substituting one for another.</p>",
+                "Describe winding and coating orientation": "<p>State how the roll must unwind and which side must face the relevant part of the process. Use a drawing or a clear orientation reference when words such as inside, outside, left and right could be misunderstood.</p><p>Include any requirements for winding tension, splice handling, edge quality and tolerances from the machine or quality specification. These must be agreed with the proposed supply; a general catalogue listing does not guarantee a particular converting limit.</p>",
+                "Plan receiving, handling and approval": "<p>Confirm that the receiving site can unload and handle the proposed roll dimensions and mass using suitable equipment and trained personnel. Agree protective packing, storage guidance and the information needed on roll labels. This guide does not replace the equipment manufacturer's safety instructions or your site procedures.</p><p>Where process performance is critical, ask what samples or trial arrangements can be provided. Agree how the grade and trial results will be approved before a larger order. Availability of samples, documents or a specific grade must be confirmed.</p>",
+                "Agree quotation units and required information": "<ul><li>Finished product and converting process.</li><li>Grade, grammage, caliper and relevant documentation.</li><li>Web width, tolerances and slitting layout.</li><li>Core requirements, outside diameter and maximum roll weight.</li><li>Winding direction and coating orientation.</li><li>Order quantity, packing and receiving constraints.</li><li>Quotation unit, such as mass or rolls, and what the stated quantity includes.</li></ul><p>Keep required limits separate from measured examples. Include machine documentation where possible and identify unknown values. A quotation should resolve the actual available specification, minimum quantities and delivery arrangements before an order is agreed.</p>"
+            }
+        }
+    },
+    "legal-pages": {
+        "privacy": {
+            "title": "Privacy Policy",
+            "intro": "How we handle personal information when you browse our website or contact us about our products.",
+            "sections": {
+                "contact": {
+                    "title": "Who to contact",
+                    "body": "<p>This notice covers krauspapersgmbh.com, the Kraus Papers website. For privacy enquiries, write to <a href=\"mailto:info@krauspapersgmbh.com\">info@krauspapersgmbh.com</a> or Kahlaker Str 2, 47228 Duisburg, Germany.</p><p>The registered identity of the organisation responsible for processing your information must be confirmed before this draft is finalised. Our <a href=\"legal-notice.php\">Legal Notice</a> contains the available business contact information.</p>"
+                },
+                "browsing": {
+                    "title": "Browsing and hosting",
+                    "body": "<p>Our website and mailbox use Hostinger services. When you visit, the hosting infrastructure processes connection information needed to deliver pages, such as your IP address, request time, requested URL and browser information. Server and security logs may record this information to operate the service and investigate faults or abuse.</p><p>The purpose is to provide a reliable, secure website. Our legitimate interest in operating and protecting the service is the basis for this processing under Article 6(1)(f) GDPR. The hosting account's log retention settings require confirmation.</p>"
+                },
+                "enquiries": {
+                    "title": "Contact and product enquiries",
+                    "body": "<p>The enquiry form collects your name, email address and message, together with the selected product when applicable. We send these details to our business mailbox to review your request and reply. Your email address is used as the reply address. Please include only information relevant to your enquiry.</p><p>These fields are required to submit the form, but contacting us is voluntary. You may instead email us directly. Without suitable contact details, we may be unable to respond.</p><p>For steps you request before entering a contract with us, processing is based on Article 6(1)(b) GDPR. For general questions or correspondence with someone acting for a business, it is based on our legitimate interest in responding to business enquiries under Article 6(1)(f). Sending an enquiry does not subscribe you to marketing.</p>"
+                },
+                "cookies": {
+                    "title": "Cookies and form security",
+                    "body": "<p>The website sets a first-party session cookie named <strong>kraus_session</strong>. It links your browser to security tokens, submission status and, when needed, temporarily retained form values. This protects the enquiry form and helps prevent duplicate messages. It is a session cookie without a fixed expiry date; browsers normally remove it when the session ends, although session restoration can preserve it.</p><p>The application also uses a hidden spam-trap field and limits repeated submissions. Its rate-limit record contains a hashed IP address, a request count and an expiry time, not your message. A hash is still treated as personal data, rather than anonymous information.</p><p>These measures support our legitimate interest in preventing abuse under Article 6(1)(f) GDPR. Necessary session storage supports the form service you request. Blocking cookies may prevent the form from working; direct email remains available.</p><p>The current website code does not include advertising cookies, analytics trackers, third-party CAPTCHA, embedded maps or remotely loaded fonts. We will review this notice and any required consent controls before introducing optional tracking.</p>"
+                },
+                "recipients": {
+                    "title": "Who receives information",
+                    "body": "<p>Enquiries are available to the people handling business correspondence and to the hosting and email providers needed to operate those services. Hostinger processes website and mailbox data as part of providing those services. Information may also be disclosed where necessary to meet a legal obligation or establish, exercise or defend a legal claim.</p><p>The applicable Hostinger contracting entity, processing locations, subprocessors and any safeguards for transfers outside the European Economic Area must be verified against our service agreement before publication. We do not claim that all data stays in Germany or the EEA. Provider information is available in <a href=\"https://www.hostinger.com/legal/privacy-policy\">Hostinger's privacy policy</a>; that policy does not replace this notice.</p>"
+                },
+                "retention": {
+                    "title": "How long information is kept",
+                    "body": "<p>Enquiry correspondence should be kept only while needed to answer the request, manage the resulting business relationship or meet applicable recordkeeping and legal-claim requirements. The mailbox deletion schedule and backup retention must be confirmed before this draft is published.</p><p>Form values may temporarily remain in the server session after a failed submission without JavaScript. Session data is removed according to the server's session cleanup settings. The form does not maintain a separate database of enquiry messages.</p><p>Rate-limit entries apply to a 15-minute window. Expired entries are removed when a subsequent submission successfully rewrites the rate-limit file; they are not guaranteed to be physically deleted at exactly 15 minutes. Hosting logs and email copies have separate retention settings.</p>"
+                },
+                "rights": {
+                    "title": "Your privacy rights",
+                    "body": "<p>Subject to the applicable conditions, you can request access, correction, erasure, restriction and portability of your personal data. You may object to processing based on legitimate interests for reasons relating to your situation. Where processing relies on consent, you may withdraw it for future processing.</p><p>Use the contact details above to exercise your rights. You can also complain to a data protection authority, including the authority where you live or work. For North Rhine-Westphalia, see the <a href=\"https://www.ldi.nrw.de/kontakt/ihre-beschwerde\">LDI NRW complaints page</a>.</p><p>The enquiry form does not make automated decisions with legal or similarly significant effects, or create marketing profiles. Its automated security checks can reject or temporarily limit submissions; you can contact us by email instead.</p>"
+                },
+                "updates": {
+                    "title": "Updates to this notice",
+                    "body": "<p>We will update this notice when the website, service providers or processing arrangements change. The review date appears at the top of this page.</p>"
+                }
+            }
+        },
+        "terms": {
+            "title": "Terms & Conditions",
+            "intro": "Information about using our website, exploring products and submitting an enquiry.",
+            "sections": {
+                "scope": {
+                    "title": "About these website terms",
+                    "body": "<p>These terms explain the use of the Kraus Papers website and its enquiry facility. This website is a product catalogue and contact service. It does not provide an online checkout or accept payments.</p><p>These website terms are not general conditions of sale. Any quotation or supply agreement requires its own agreed commercial terms.</p>"
+                },
+                "products": {
+                    "title": "Product information",
+                    "body": "<p>Product pages help you identify items to discuss with us. Images and descriptions may illustrate a product range rather than a particular shipment. Confirm the grade, dimensions, grammage, finish, packaging, quantity and intended use for the product you require before ordering.</p><p>Availability, prices, delivery dates and any certification must be confirmed for the specific offer. Website content alone does not constitute a binding offer or a guarantee of suitability for a particular application. This does not override specifications or commitments expressly agreed with you.</p>"
+                },
+                "enquiry": {
+                    "title": "Submitting an enquiry",
+                    "body": "<p>Provide accurate contact information and enough detail for us to understand your request. An enquiry asks us for information or a quotation; it does not place an order or create a purchase obligation.</p><p>The form's delivery confirmation means that the email service accepted the message. It is not an order confirmation, a quotation or a promise of a response within a particular time. If you do not receive a reply, contact <a href=\"mailto:info@krauspapersgmbh.com\">info@krauspapersgmbh.com</a>.</p>"
+                },
+                "orders": {
+                    "title": "Quotations and orders",
+                    "body": "<p>Before an order is concluded, the parties must agree the relevant product specification, price, taxes, payment arrangements, delivery terms and any applicable sales conditions. Returns, complaints and other contractual matters are governed by the applicable agreement and mandatory law.</p><p>Nothing on this page removes statutory rights or introduces unconfirmed payment, cancellation, warranty or jurisdiction terms.</p>"
+                },
+                "use": {
+                    "title": "Responsible use",
+                    "body": "<p>Use this website lawfully. Do not submit spam, impersonate another person, attempt unauthorised access or interfere with the service. Automated security measures may limit repeated form submissions.</p><p>Website text, design and images may be protected by intellectual property rights. Third-party product names and trademarks remain the property of their respective owners. Uses beyond those permitted by law require permission from the relevant rights holder.</p>"
+                },
+                "availability": {
+                    "title": "Availability and external links",
+                    "body": "<p>Pages may change or be temporarily unavailable during maintenance or technical incidents. Please tell us if you find an error so that we can review it.</p><p>Links to external websites are provided for further information. Those websites are operated by their respective providers and have their own terms and privacy notices. These terms do not exclude liability where exclusion is prohibited by law.</p>"
+                },
+                "privacy": {
+                    "title": "Privacy and contact",
+                    "body": "<p>Our <a href=\"privacy-policy.php\">Privacy Policy</a> explains how enquiry and website data are handled. See the <a href=\"legal-notice.php\">Legal Notice</a> for business contact information.</p>"
+                }
+            }
+        },
+        "notice": {
+            "title": "Legal Notice",
+            "intro": "Business contact information for the Kraus Papers website.",
+            "sections": {
+                "business": {
+                    "title": "Business contact",
+                    "body": "<p><strong>Kraus Papers</strong><br>Kahlaker Str 2<br>47228 Duisburg<br>Germany</p><p>Email: <a href=\"mailto:info@krauspapersgmbh.com\">info@krauspapersgmbh.com</a><br>Website: krauspapersgmbh.com</p><p>You can also reach us through our <a href=\"index.php#contact\">contact form</a>.</p>"
+                },
+                "registration": {
+                    "title": "Company registration",
+                    "body": "<p>This legal notice is awaiting confirmation of the full registered company name and legal form, authorised representative, register court and registration number, and VAT identification number or business identification number where applicable.</p><p>The Kraus Papers name above identifies the website brand. It is not a substitute for confirmed company registration information. Details from the previous website have not been carried over because they differ from the current business contact details.</p>"
+                },
+                "content": {
+                    "title": "Website content",
+                    "body": "<p>For questions about the website, product descriptions or the use of images, please contact us at the email address above. Product-specific commitments belong in the relevant quotation or agreement.</p><p>Further information is available in our <a href=\"terms-and-conditions.php\">Terms &amp; Conditions</a> and <a href=\"privacy-policy.php\">Privacy Policy</a>.</p>"
+                }
+            }
+        }
+    },
+    "index-intro": "\r\n    <section class=\"hero\" id=\"home\" aria-labelledby=\"hero-title\">\r\n        <div class=\"hero__image\" role=\"img\" aria-label=\"Paper factory with large industrial paper rolls\">\r\n        </div>\r\n        <div class=\"hero__overlay\" aria-hidden=\"true\"></div>\r\n        <div class=\"hero__content\">\r\n            <p class=\"eyebrow eyebrow--light\">Kraus Papers</p>\r\n            <h1 id=\"hero-title\">Paper and Adhesive Products for Business</h1>\r\n            <p>\r\n                From printing paper and thermal rolls to industrial paper rolls and adhesive tapes,\r\n                Kraus Papers provides practical solutions for your everyday business needs.\r\n            </p>\r\n            <a class=\"button button--light\" href=\"#products\">Explore Our Products</a>\r\n        </div>\r\n    </section>\r\n\r\n    <section class=\"about\" id=\"about\" aria-labelledby=\"about-title\">\r\n        <div class=\"about__layout section-wrap\">\r\n            <div class=\"about__collage\" aria-label=\"Kraus Papers production and product range\">\r\n                <figure class=\"about__photo about__photo--factory\" role=\"img\" aria-label=\"Paper factory with large industrial paper rolls\">\r\n                    <span class=\"about__photo-caption\">Paper production</span>\r\n                </figure>\r\n                <figure class=\"about__photo about__photo--secondary\" role=\"img\" aria-label=\"Landscape image supplied for the About section\">\r\n                    <span class=\"about__range-overlay\">\r\n                        <span class=\"eyebrow\">Our product range</span>\r\n                        <span class=\"about__range-list\">\r\n                            <span>Printing Paper</span>\r\n                            <span>Thermal Paper</span>\r\n                            <span>Jumbo Paper Rolls</span>\r\n                            <span>Adhesive Tape</span>\r\n                        </span>\r\n                    </span>\r\n                </figure>\r\n                <p class=\"about__audience-note\">For offices, retail, printing, and industry</p>\r\n            </div>\r\n\r\n            <div class=\"about__copy\">\r\n                <p class=\"eyebrow\">A bit about us</p>\r\n                <h2 id=\"about-title\">About Us</h2>\r\n                <p>\r\n                    Kraus Papers brings together printing paper, thermal paper, jumbo paper rolls,\r\n                    and adhesive tapes in one product range. We serve the everyday needs of offices,\r\n                    retailers, printing businesses, and industrial operations.\r\n                </p>\r\n                <p>\r\n                    From documents and receipts to paper converting and packaging tasks, different\r\n                    applications call for different materials. We help businesses find products suited\r\n                    to their daily work.\r\n                </p>\r\n                <a class=\"button button--orange about__button\" href=\"/about.php\">More About Us</a>\r\n            </div>\r\n        </div>\r\n    </section>\r\n\r\n    ",
+    "about-intro": "\r\n    <nav class=\"breadcrumb-bar\" aria-label=\"Breadcrumb\">\r\n        <div class=\"breadcrumb-bar__inner\">\r\n            <a href=\"/\">Home</a>\r\n            <span aria-hidden=\"true\">/</span>\r\n            <span aria-current=\"page\">About Us</span>\r\n        </div>\r\n    </nav>\r\n\r\n    <section class=\"about-page-intro\" aria-labelledby=\"about-page-title\">\r\n        <div class=\"about-page-intro__inner\">\r\n            <p class=\"eyebrow\">About Kraus Papers</p>\r\n            <h1 id=\"about-page-title\">Paper and Tape for Business Requirements</h1>\r\n            <p>\r\n                At Kraus Papers, we understand that paper is part of the work that keeps businesses moving—from the first printed document to the final customer receipt. Our range brings together printing paper, thermal paper, jumbo paper rolls, and adhesive tapes for commercial and industrial applications.\r\n            </p>\r\n            <p>\r\n                We aim to make choosing the right products straightforward, helping businesses connect their everyday requirements with practical paper solutions.\r\n            </p>\r\n        </div>\r\n    </section>\r\n\r\n    <section class=\"about-story\" aria-label=\"About our approach\">\r\n        <article class=\"about-story__item\">\r\n            <span class=\"about-story__number\" aria-hidden=\"true\">01</span>\r\n            <div>\r\n                <p class=\"eyebrow\">A range with a purpose</p>\r\n                <h2>A Range with a Purpose</h2>\r\n                <p>Different businesses demand different things from paper. Offices need sheets for everyday communication. Retailers rely on receipt and label rolls. Printers and converters require materials suited to their production processes.</p>\r\n                <p>Our product range reflects these varied needs, bringing together options for printing, recording, labelling, and packing. Whether you are purchasing finished paper products or larger rolls for further processing, Kraus Papers offers a clear starting point for your requirements.</p>\r\n            </div>\r\n        </article>\r\n\r\n        <article class=\"about-story__item about-story__item--reverse\">\r\n            <span class=\"about-story__number\" aria-hidden=\"true\">02</span>\r\n            <div>\r\n                <p class=\"eyebrow\">Built around your business</p>\r\n                <h2>Built Around Your Business</h2>\r\n                <p>We believe a lasting business relationship begins with understanding what matters to you: the right product, clear information, and responsive communication.</p>\r\n                <p>Our ambition is to grow alongside our customers, adapting our range as their needs evolve and building partnerships grounded in trust and practical support. From your first enquiry to your next order, our focus is on helping your business move forward.</p>\r\n            </div>\r\n        </article>\r\n    </section>\r\n\r\n    <section class=\"advantages-section\" aria-labelledby=\"advantages-title\">\r\n        <div class=\"advantages-section__inner\">\r\n            <div class=\"advantages-section__heading\">\r\n                <p class=\"eyebrow\">Why Kraus Papers</p>\r\n                <h2 id=\"advantages-title\">Our Advantages</h2>\r\n                <p>A thoughtful product range and a business-first way to explore what fits your needs.</p>\r\n            </div>\r\n            <div class=\"advantages-grid\">\r\n                <article class=\"advantage-card\">\r\n                    <span class=\"advantage-card__icon\"><img src=\"/assets/images/OEM.png\" alt=\"\" loading=\"lazy\"></span>\r\n                    <h3>One Considered Range</h3>\r\n                    <p>Printing paper, thermal paper, jumbo rolls, and adhesive tapes brought together in one place.</p>\r\n                </article>\r\n                <article class=\"advantage-card\">\r\n                    <span class=\"advantage-card__icon\"><img src=\"/assets/images/free-sample.png\" alt=\"\" loading=\"lazy\"></span>\r\n                    <h3>For Varied Applications</h3>\r\n                    <p>Explore options for documents, receipts, labels, paper converting, and packing requirements.</p>\r\n                </article>\r\n                <article class=\"advantage-card\">\r\n                    <span class=\"advantage-card__icon\"><img src=\"/assets/images/online-support.png\" alt=\"\" loading=\"lazy\"></span>\r\n                    <h3>Clear Product Conversations</h3>\r\n                    <p>Share the product and application details that matter to your business and start with a focused enquiry.</p>\r\n                </article>\r\n                <article class=\"advantage-card\">\r\n                    <span class=\"advantage-card__icon\"><img src=\"/assets/images/customized service.png\" alt=\"\" loading=\"lazy\"></span>\r\n                    <h3>Partnership-Minded</h3>\r\n                    <p>We aim to build lasting customer relationships through practical support and responsive communication.</p>\r\n                </article>\r\n                <article class=\"advantage-card advantage-card--featured\">\r\n                    <span class=\"advantage-card__icon\"><img src=\"/assets/images/inspection.png\" alt=\"\" loading=\"lazy\"></span>\r\n                    <h3>A Straightforward Starting Point</h3>\r\n                    <p>Browse a clearly organised selection and let us know what you need for your next business requirement.</p>\r\n                </article>\r\n            </div>\r\n        </div>\r\n    </section>\r\n\r\n    <section class=\"factory-section\" aria-labelledby=\"factory-title\">\r\n        <div class=\"factory-section__inner\">\r\n            <div class=\"factory-section__heading\">\r\n                <p class=\"eyebrow\">Paper, rolls &amp; production</p>\r\n                <h2 id=\"factory-title\">Paper Production Imagery</h2>\r\n                <p>Illustrative paper rolls, equipment and production environments. These images do not establish factory ownership or the manufacturing location of a quoted product.</p>\r\n            </div>\r\n            <div class=\"factory-gallery\">\r\n                <figure class=\"factory-gallery__item\">\r\n                    <img src=\"/assets/images/factory display 1.jpg\" alt=\"Large industrial paper rolls arranged in a warehouse\" loading=\"lazy\" decoding=\"async\">\r\n                    <figcaption>Paper rolls in a warehouse</figcaption>\r\n                </figure>\r\n                <figure class=\"factory-gallery__item\">\r\n                    <img src=\"/assets/images/factory display 2.jpg\" alt=\"Paper converting equipment handling a wide paper roll\" loading=\"lazy\" decoding=\"async\">\r\n                    <figcaption>Paper converting equipment</figcaption>\r\n                </figure>\r\n                <figure class=\"factory-gallery__item\">\r\n                    <img src=\"/assets/images/factory display 3.jpg\" alt=\"Large paper roll mounted on industrial machinery\" loading=\"lazy\" decoding=\"async\">\r\n                    <figcaption>Roll processing machinery</figcaption>\r\n                </figure>\r\n                <figure class=\"factory-gallery__item\">\r\n                    <img src=\"/assets/images/factory display 4.jpg\" alt=\"Paper sheets and supplies inside a production facility\" loading=\"lazy\" decoding=\"async\">\r\n                    <figcaption>Paper materials and storage</figcaption>\r\n                </figure>\r\n                <figure class=\"factory-gallery__item\">\r\n                    <img src=\"/assets/images/factory display 5.jpg\" alt=\"Industrial paper equipment and rolls inside a factory\" loading=\"lazy\" decoding=\"async\">\r\n                    <figcaption>Industrial paper equipment</figcaption>\r\n                </figure>\r\n                <figure class=\"factory-gallery__item\">\r\n                    <img src=\"/assets/images/factory display 6.jpg\" alt=\"Paper converting machine with a wide paper roll\" loading=\"lazy\" decoding=\"async\">\r\n                    <figcaption>Converting paper rolls</figcaption>\r\n                </figure>\r\n                <figure class=\"factory-gallery__item\">\r\n                    <img src=\"/assets/images/factory display 7.jpg\" alt=\"Large paper roll beside processing machinery\" loading=\"lazy\" decoding=\"async\">\r\n                    <figcaption>Paper roll processing</figcaption>\r\n                </figure>\r\n                <figure class=\"factory-gallery__item\">\r\n                    <img src=\"/assets/images/factory display 8.jpg\" alt=\"Several jumbo paper rolls on a production line\" loading=\"lazy\" decoding=\"async\">\r\n                    <figcaption>Jumbo rolls on a production line</figcaption>\r\n                </figure>\r\n            </div>\r\n        </div>\r\n    </section>\r\n\r\n    <section class=\"about-contact-cta\">\r\n        <div class=\"about-contact-cta__inner\">\r\n            <p class=\"eyebrow\">Start a conversation</p>\r\n            <h2>Let’s Discuss Your Paper Requirements</h2>\r\n            <a class=\"button button--orange\" href=\"/contact.php\">Get in Touch</a>\r\n        </div>\r\n    </section>\r\n\r\n    "
+}

@@ -1,0 +1,14 @@
+[build]
+  base = "."
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "24"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+# Netlify automatically installs its Next.js/OpenNext adapter.
+# Mail credentials belong in the Netlify UI, scoped to Functions (never here).
