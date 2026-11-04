@@ -14,12 +14,20 @@ try {
  assert.equal(await page.evaluate(()=>getComputedStyle(document.documentElement).scrollBehavior),'smooth');
  for(const width of [320,375,768,1440]){
   await page.setViewportSize({width,height:900});
-  for(const path of ['/','/printing-paper.php','/product-details.php?id=thermal-paper-rolls','/contact.php?product=Clear+Tape','/terms-and-conditions.php','/guides/thermal-paper-roll-size.php']){
+  for(const path of ['/','/printing-paper.php','/product-details.php?id=thermal-paper-rolls','/contact.php?product=Clear+Tape','/terms-and-conditions.php','/resources.php','/guides/thermal-paper-roll-size.php']){
    await page.goto(base+path);await page.locator('h1').waitFor();
    const size=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,viewport:innerWidth}));
    assert.ok(size.scroll<=size.viewport+1,`${width} ${path} overflows: ${size.scroll}`);
   }
  }
+ await page.setViewportSize({width:375,height:812});
+ await page.goto(base+'/resources.php');await page.screenshot({path:'tests/screenshots/resources-mobile.png',fullPage:true});
+ await page.goto(base+'/guides/thermal-paper-roll-size.php');
+ await page.getByRole('navigation',{name:'In this guide'}).getByRole('link').first().click();
+ assert.ok(new URL(page.url()).hash.length>1);
+ await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));
+ await page.screenshot({path:'tests/screenshots/article-mobile.png',fullPage:true});
+ await page.setViewportSize({width:1440,height:1000});await page.goto(base+'/guides/thermal-paper-roll-size.php');await page.screenshot({path:'tests/screenshots/article-desktop.png',fullPage:true});
  await page.setViewportSize({width:375,height:812});
  await page.goto(base+'/terms-and-conditions.php');
  await page.screenshot({path:'tests/screenshots/legal-mobile.png',fullPage:true});
@@ -57,6 +65,7 @@ try {
  await page.screenshot({path:'tests/screenshots/contact-mobile.png',fullPage:true});
  assert.deepEqual(errors,[],'Browser runtime errors');
  const nojs=await browser.newPage({javaScriptEnabled:false});
+ await nojs.goto(base+'/printing-paper.php');assert.equal(await nojs.locator('.product-card:visible').count(),11);
  await nojs.goto(base+'/api/contact?initialize=1');
  await nojs.getByLabel('Name',{exact:true}).fill('No JS Buyer');
  await nojs.getByLabel('Email',{exact:true}).fill('buyer@example.test');
@@ -72,5 +81,5 @@ try {
  await reduced.goto(base+'/');await reduced.locator('.about__copy').scrollIntoViewIfNeeded();
  assert.equal(await reduced.evaluate(()=>getComputedStyle(document.documentElement).scrollBehavior),'auto');
  assert.equal(await reduced.evaluate(()=>window.motionCalls),0);
- console.log('PASS: 24 responsive page checks, mobile menu, filters, View More, mock success/failure, measurement and non-JavaScript form preservation. No real email sent.');
+ console.log('PASS: 28 responsive page checks, editorial anchors/layouts, mobile menu, filters, View More, mock success/failure, measurement and non-JavaScript catalogue/form behaviour. No real email sent.');
 } finally {await browser.close();}

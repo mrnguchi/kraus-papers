@@ -46,6 +46,8 @@ The existing design, responsive product cards and legal pages are preserved. Nat
 
 Edit src/data/content.json for catalogue and editorial content. Home/About sections include trusted static HTML; visitor data is never inserted as HTML. Canonicals and metadata retain the production origin https://krauspapersgmbh.com. The sitemap lists 42 indexable URLs; legal drafts stay noindex. Do not add unverified stock, certification, registration or delivery claims.
 
+The resource hub and guides use a dedicated editorial layout in src/components/Editorial.jsx. Guide summaries, diagrams and update dates are in src/data/editorial.js. Keep visible update dates, Article metadata and sitemap modification dates aligned when making substantive changes. Image preparation generates actual intrinsic dimensions and optimized backgrounds during dev/build. See docs/seo-implementation.md for the current plan audit and pending owner/account work.
+
 ## Contact form and email
 
 Use .env.example as the private configuration template or set values in Netlify's environment-variable UI. No credential belongs in public/, netlify.toml, GitHub or a NEXT_PUBLIC_ variable. The recipient is fixed to info@krauspapersgmbh.com. A configured authorized From address is used, with the visitor's validated email as Reply-To. Nodemailer supports the configured LOGIN/PLAIN SMTP transport over verified TLS.

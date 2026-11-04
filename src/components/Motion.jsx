@@ -20,7 +20,7 @@ export default function Motion(){
     animations.add(animation);animation.onfinish=()=>animations.delete(animation);
    });
   },{threshold:.08,rootMargin:'0px 0px -24px 0px'});
-  const selector='.about__copy, .about__collage, .products-section__heading, .product-card, .advantage-card, .about-story__item, .factory-gallery__item, .buying-guide__grid > article, .legal-page__body > section, .contact-info';
+  const selector='.about__copy, .about__collage, .products-section__heading, .product-card, .advantage-card, .about-story__item, .factory-gallery__item, .buying-guide__grid > article, .legal-page__body > section, .contact-info, .editorial-story';
   document.querySelectorAll(selector).forEach(element=>{
    // Above-the-fold content stays immediately visible; lower content reveals once.
    if(element.hidden||element.getBoundingClientRect().top>=window.innerHeight*.85)observer.observe(element);

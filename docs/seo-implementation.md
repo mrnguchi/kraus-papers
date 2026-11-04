@@ -1,71 +1,85 @@
-# SEO implementation — 27 October 2026
+# SEO implementation audit — 4 November 2026
 
-The Next.js version now targets GitHub → Netlify. See [netlify-deployment.md](netlify-deployment.md) for current deployment/local commands; the PHP Hostinger instructions below apply only to the retained original version.
+Source plan: Kraus_Papers_14_Day_On_Page_SEO_Plan.docx. This report replaces the former PHP implementation checklist. The active site is Next.js in the repository root, configured for GitHub → Netlify. Status below is based on source inspection and local verification; it is not a Search Console report or proof that the latest code is deployed.
 
-Source: Kraus_Papers_14_Day_On_Page_SEO_Plan.docx. Local implementation only; no deployment, DNS changes, Search Console submission or real email sends.
+## Current inventory
 
-## Implemented
+- 32 product URLs across four categories, all retained.
+- Home, About, Contact, Resources and two buyer guides.
+- 42 intended indexable canonical pages in the sitemap.
+- Three legal drafts remain accessible but noindex and outside the sitemap.
+- Original product action register: seo-url-register.csv. All 32 products still map to their original URLs. The register's stock-verification actions remain unresolved.
 
-- Preferred origin https://krauspapersgmbh.com. Absolute self-canonicals preserve each product ID and strip enquiry/tracking variants. Homepage variants canonicalise to `/`; contact variants canonicalise to `/contact.php`.
-- Hostinger Apache rules redirect www/HTTP to the preferred origin and explicit index.php requests to `/`, preserving query strings. Local router reproduces the homepage alias redirect. Apache production rules require verification after upload; PHP's development server does not execute .htaccess.
-- robots.txt and dynamically generated /sitemap.xml: 42 intended indexable pages (Home, About, Contact, resources, two guides, four categories, 32 products). No artificial lastmod dates. Draft legal pages remain accessible but noindex and excluded from the sitemap until owner review.
-- Organization markup limited to the existing brand, URL, logo and email. BreadcrumbList matches the visible hierarchy. No unverified registered legal name, ratings, offers, zero prices or stock status. Product rich-result markup is deferred because no qualifying verified offer/review data exists.
-- Home metadata and H1 describe the actual range without unconfirmed manufacturer/wholesale/geography claims. Existing category links remain crawlable. About gallery explicitly labels illustrative production imagery.
-- All four category pages have intent-specific metadata/H1s, product-family guidance, relevant product links, ordering questions and quote CTA. Product grids remain above the additional guidance.
-- All 32 product URLs retained with existing unique metadata, descriptions and specification tables. Twelve priority products have additional application/limitation notes. No fabricated supply specifications. Product and category links connect the guides, contact page and catalogue.
-- Dedicated product-aware contact page. New card/detail enquiry links use contact.php; legacy homepage product queries and #contact still work. Existing form security and no-JavaScript fallback remain intact.
-- Resources hub linked in footer; original thermal-roll measurement and thermal-jumbo specification guides link to relevant categories, products and enquiries. No invented reviewer attribution; technical/product-owner review remains recommended.
-- Product-card and detail images now use real intrinsic dimensions. Homepage hero is preloaded and remains non-lazy. Static asset expiry rules added without changing private/no-store HTML or CSRF handling.
-- Measurement integration hooks: `kraus:generate_lead` after an accepted response, once per submission ID within the page lifecycle; `kraus:email_click` separately. Payloads contain no names, addresses, message text or product-query URLs. No external analytics service, tracking storage or consent mechanism added. These hooks are not yet an analytics reporting system and do not measure non-JavaScript submissions.
+## Reconciliation against the 14-day plan
 
-## Verification
+| Plan day | Status | Implemented evidence | Still required |
+|---|---|---|---|
+| 1 — Baseline and offer | Partial | Original public audit retained in the source plan; complete local URL inventory and automated crawl. | Owner: target countries, customer types, sourcing/manufacturing role and qualified-enquiry definition. Account owner: Search Console 28/90-day exports and PageSpeed baseline. |
+| 2 — URL consistency/discovery | Implemented in code | Absolute canonicals retain product IDs; plain index.php redirects to `/` and preserves queries; www redirects to non-www; robots and 42-entry sitemap; invalid pages/IDs return 404. | Verify HTTPS, domain aliases, sitemap and Google-selected canonicals on the actual Netlify production domain after DNS/cutover. HTTPS enforcement belongs to the hosting platform. |
+| 3 — Overlap and product facts | Pending owner evidence | All original URLs preserved; A4, receipt, parent-roll, colour and tape overlap groups identified in the source plan/register. | Product owner + SEO account owner: compare SKUs, supplied grades, dimensions and real query/link data. No merges or one-to-one product redirects have been approved or implemented. |
+| 4 — Home/trust/contact | Partial | Range-specific Home metadata/H1, four category paths, About with illustrative production captions, dedicated product-aware Contact, consistent supplied email/address. | Owner: full registered company identity, operating role, markets, image permissions and legal/privacy facts. Legal drafts have not been finalised. |
+| 5 — Printing paper | Partial | Category buying guidance and all 11 URLs retained; A4, large sheets, PE-coated sheets and white kraft have priority application/enquiry notes. | Product owner: actual grades, sizes, weights, grain, finish, pack units and duplicate decisions. No unsupported supply specifications added. |
+| 6 — Thermal/labels | Partial | Category distinguishes finished rolls from labels and jumbo stock. Receipt, barcode and custom-label priority notes, printer-fit checklists, relevant guide links. | Product owner: actual roll/label geometry, winding, adhesive, printer process, packing and grade-specific declarations. Receipt overlap still pending. |
+| 7 — First review | Partial | Local technical, link, mobile and mock-form regression checks. | Owner review of product facts and account-based URL inspection; production comparison. |
+| 8 — Jumbo rolls | Partial | Parent-roll/converting guidance, thermal and coloured roll priority notes, core/weight/winding checklists and guide links. | Product owner: grade/geometry/tolerance evidence and duplicate/colour decisions. |
+| 9 — Tapes | Partial | Category separates carton sealing, bonding, general use and custom requests. BOPP, bonding and custom-packing priority notes. | Product owner: actual backing/adhesive/thickness, sizes, application limits and confirmed custom print services. |
+| 10 — Metadata/linking/schema | Implemented for known facts | Unique metadata, canonicals, category/product breadcrumbs, Organization markup, contextual links. Guides now have Article markup and article-specific previews. | Live Rich Results/URL inspection after deployment. Product rich-result offers/ratings remain intentionally absent because qualifying verified data is unavailable. |
+| 11 — Buyer resources | Implemented; review pending | Two original guides and a linked resource hub. Editorial article layout, measurement diagrams, summaries, dates, reading times, contents links, related reading and quote paths. | Product-specialist review of guidance; do not invent a named reviewer. |
+| 12 — Performance/mobile | Partial; improved this pass | Compressed responsive hero backgrounds; optimized secondary background; responsive Next Image product media; intrinsic dimensions restored; responsive editorial layout; native scrolling and reduced-motion support. | Comparable PageSpeed/lab runs and available field CWV. Asset reductions and browser layout checks are not a field LCP/INP/CLS pass. |
+| 13 — Release audit | Partial | Automated page/link/metadata/schema checks, browser/mobile checks and mock form/security coverage. | Owner commercial/legal review and deployed-domain, Blobs, cleanup and actual mailbox acceptance/inbox verification. No real messages sent during this audit. |
+| 14 — Submission/follow-up | Pending account/release action | Current deployment instructions are in netlify-deployment.md. | Submit sitemap in Search Console, record release date and schedule reviews 2/4 weeks later. No indexing requests or ranking claims made. |
 
-Local results: 514 SEO/link checks passed across 42 indexable URLs; smoke checks passed for all 32 products, assets, enquiry summaries and private-file isolation; 54 backend contact checks, 21 isolated HTTP checks, dotenv checks and client state/event checks passed. PHP syntax checks passed. No real email sent. Mobile visual review and measured browser performance are still outstanding; HTTP checks are not visual or Core Web Vitals validation.
+## Improvements made in this pass
 
-Run `php -S 127.0.0.1:8096 -t public scripts/serve-router.php`, then:
+### Editorial UI and content
 
+Resources now has a news-style masthead, a prominent lead story, a secondary story, section labels and a catalogue sidebar. Article pages use a large readable headline, a concise standfirst, a visible Kraus Papers byline, reading time, labelled diagrams and captions, a summary, anchored contents navigation, comfortable text width and relevant next reading. Mobile layouts stack cleanly; the news-style presentation does not turn buying guides into news reports.
+
+Two original SVG measurement diagrams have PNG versions for sharing metadata. Summaries, takeaways and diagrams are substantive additions, so both guides now visibly show 4 November 2026 as their update date. That same date is used in Article dateModified, Open Graph and sitemap lastmod. No original publication date, named expert, testimonial or review was invented.
+
+The Resources link is now visible in primary navigation as well as the footer and relevant categories/products. All catalogue entries can be read without JavaScript; the noscript view displays entries normally hidden behind View More.
+
+### Technical polish
+
+- Article schema describes visible buying guides using Article, not fabricated NewsArticle claims.
+- Product social previews use the actual product image; guide previews use their own diagram. General pages use the paper-production image. Open Graph/Twitter metadata includes meaningful images and dimensions.
+- Actual image dimensions are generated from public assets. Product cards/detail images use Next Image with responsive sizes. About/editorial images retain explicit dimensions.
+- Hero preloads match the mobile/desktop background variants. Optimized background byte comparisons are recorded in seo-image-report.md; originals are retained for reference.
+- Legal/preview noindex rules, product canonicals, form privacy and the 42-URL sitemap are preserved. Only the two actually updated guides receive lastmod dates; no dates are fabricated for other pages.
+
+## Verification and practical limits
+
+Run from the root:
+
+```powershell
+npm.cmd test
+npm.cmd run build
 ```
-php tests/seo.php
-php tests/smoke.php http://127.0.0.1:8096
-php tests/contact.php
-php tests/contact-http.php
-php tests/mail-config.php
-node tests/contact-client.cjs
+
+With a local server running (see README.md):
+
+```powershell
+npm.cmd run test:site
+npm.cmd run test:browser
 ```
 
-SEO checks cover 42 canonical pages, unique metadata, one H1, valid JSON-LD, sitemap parity, genuine 404s, homepage redirects, legal draft exclusion and both old/new product-prefill routes. Mail tests use mocks only. Local tests cannot establish Google-selected canonicals, indexing, ranking or field Core Web Vitals.
+Checks cover canonical/metadata uniqueness, genuine 404s, JSON-LD, internal links, sitemap parity, guide content/preview agreement, image dimensions and article anchors, plus mobile layouts, catalogue controls, motion preferences and mock/non-JavaScript form behaviour. Live-domain HTTPS/DNS, Google indexing, actual Netlify service bindings and real inbox delivery need deployment/account checks.
 
-## Plan reconciliation and pending work
+Final local results: optimized production build passed; 931 HTTP/SEO checks passed across all 42 indexable pages and 32 products; 13 security/storage test groups passed; 28 responsive page checks passed (seven representative pages at 320, 375, 768 and 1440 pixels). Browser checks also passed for article contents links, no-JavaScript catalogue discovery, navigation, filters, motion preferences and mock form success/failure. Resource-hub and article screenshots were visually inspected on mobile and desktop. No real emails sent and no deployment performed.
 
-| Plan days | Result / remaining dependency |
-|---|---|
-| 1 | Original document provides the public audit baseline. Generated seo-url-register.csv accounts for all pages and 32 original products. Search Console 28/90-day exports, target countries and qualified-lead definition need owner account/input. No search metrics invented. |
-| 2 | Canonicals, discovery endpoints and redirect configuration implemented; production host/HTTPS tests follow deployment. |
-| 3 | All products retained pending SKU and grade comparison; no irreversible or speculative merges. A4, finished receipt and thermal-parent groups require owner evidence and GSC data. |
-| 4 | Home, About and dedicated Contact improved. Registered identity and legal-page completion still owner-dependent. |
-| 5–6, 8–9 | Four categories enriched; all products accounted for; 12 priority buying notes added. Actual grade, size, packing, MOQ, lead-time, chemical and certification fields cannot be filled without supplier documents. |
-| 7, 10, 13 | Automated metadata/discovery/form checks available. Owner claims review and Search Console/Rich Results live inspection remain. No FAQ rich-result markup. |
-| 11 | Resource hub and two guides implemented, linked both ways; no named expert review claimed. |
-| 12 | Intrinsic dimensions, hero preload and safe static caching implemented. Original hero is 1,033,892 bytes; secondary about image 2,974,601 bytes. Image-format conversion and performance tuning need measured lab comparison/visual checks; no fabricated PageSpeed or CrUX pass. |
-| 14 | Upload and Search Console submission not performed. Owner must deploy, submit sitemap and record actual release date; schedule manual reviews 2 and 4 weeks after that date. |
+## Next actions, in order
 
-### Information to obtain
+1. **Business/product owner:** complete registered identity and the actual product specification sheets. Approve which overlapping listings are genuine variants before any merge.
+2. **Site owner:** deploy the tested commit to Netlify and verify production aliases, contact operation, privacy draft status and image delivery. Preserve Hostinger email DNS during any nameserver change.
+3. **Search Console owner:** submit https://krauspapersgmbh.com/sitemap.xml, inspect Home, categories and representative products/guides; export query/page/country/device baselines.
+4. **SEO/analytics owner:** choose an approved measurement platform and consent approach, connect existing non-personal lead/email-click hooks, and define qualified enquiries. Event hooks alone do not report conversions.
+5. **Performance reviewer:** record mobile/desktop lab comparisons on Home, a category, a product and a guide. Evaluate field thresholds only when sufficient real-user data exists.
 
-Product owner: SKU distinctions; actual supplied dimensions, grammage, coating/backing/adhesive, tolerances, packaging, minimum orders, delivery terms and supporting documents. Confirm custom printing availability and samples. Review A4, receipt-roll, thermal-parent, coloured/red and bonding/clear-tape overlap before selecting survivor URLs.
+## Sources
 
-Business owner: legal entity/register details, operational role, countries served, image permissions, privacy retention and hosting processor information. These remain the same gaps noted in legal-pages-review.md.
+- Original 14-day Word plan in this folder.
+- https://developers.google.com/search/docs/appearance/structured-data/article
+- https://developers.google.com/search/docs/appearance/google-images
+- https://nextjs.org/docs/app/api-reference/components/image
 
-Account owner: GSC property access/exports, analytics platform and privacy requirements, qualified-lead definition, PageSpeed/CrUX results. Connect measurement hooks to the approved platform only after deciding consent and privacy requirements. Exclude URL query data and form contents. Use a server-approved integration for non-JavaScript conversions if required.
-
-## Hostinger upload
-
-Back up the current site and .htaccess. Upload updated `app/` beside public_html. Upload the CONTENTS of `public/` into public_html, including .htaccess, robots.txt, sitemap.php, contact.php, resources.php, guides/ and updated assets. Do not overwrite the private .env or upload docs/tests into public_html. No new Composer dependencies.
-
-Verify /sitemap.xml, /robots.txt, all four categories, guides, product prefilling and 404s. Check https://www.krauspapersgmbh.com/ redirects to the non-www host; /index.php?product=Clear+Tape must retain the query when redirecting. Confirm HTTPS rules do not loop under the hosting configuration. Then submit https://krauspapersgmbh.com/sitemap.xml in Search Console and inspect representative URLs.
-
-## Primary references checked
-
-- https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls
-- https://developers.google.com/search/docs/appearance/structured-data/product-snippet
-
-The source plan supplies the remaining research context. Product-specific specifications from benchmark suppliers have not been copied into this catalogue.
+No new supplier specifications, search volumes, traffic numbers, rankings or field performance scores were invented.

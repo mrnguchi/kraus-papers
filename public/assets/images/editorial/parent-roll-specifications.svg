@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+<title id="title">Parent roll specification</title><desc id="desc">Illustrative parent paper roll showing web width, outside diameter, core and unwinding direction. Not to scale.</desc>
+<defs><linearGradient id="paper" x2="0" y2="1"><stop stop-color="#faf8f1"/><stop offset="1" stop-color="#b9c6bd"/></linearGradient><marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse"><path d="M0 0 8 4 0 8" fill="none" stroke="#d65a1c" stroke-width="1.5"/></marker></defs>
+<rect width="1200" height="720" fill="#e9eeea"/><path d="M48 76h1104M48 650h1104" stroke="#cbd6ce"/>
+<text x="50" y="53" font-family="Arial,sans-serif" font-size="17" letter-spacing="3" fill="#51645a">KRAUS PAPERS / CONVERTING NOTES</text>
+<ellipse cx="555" cy="566" rx="345" ry="25" fill="#1f3328" opacity=".08"/>
+<path d="M268 190 C145 190 145 530 268 530 H745 C875 530 875 190 745 190Z" fill="url(#paper)" stroke="#51645a" stroke-width="2"/>
+<path d="M268 190 C390 190 390 530 268 530" fill="none" stroke="#97a99e" stroke-width="2"/>
+<ellipse cx="745" cy="360" rx="120" ry="170" fill="#f7f8f1" stroke="#51645a" stroke-width="2"/><ellipse cx="745" cy="360" rx="104" ry="151" fill="none" stroke="#c9d3c6"/><ellipse cx="745" cy="360" rx="86" ry="130" fill="none" stroke="#dce3d5"/><ellipse cx="745" cy="360" rx="28" ry="42" fill="#998369"/><ellipse cx="745" cy="360" rx="17" ry="28" fill="#39483e"/>
+<path d="M268 169v-35m477 35v-35" stroke="#d65a1c" stroke-width="2"/><path d="M275 145h463" stroke="#d65a1c" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="506" y="120" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" fill="#9a3f14">Web width</text>
+<path d="M882 190h36m-36 340h36" stroke="#d65a1c" stroke-width="2"/><path d="M905 198v324" stroke="#d65a1c" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="940" y="351" font-family="Arial,sans-serif" font-size="24" fill="#9a3f14">Outside</text><text x="940" y="384" font-family="Arial,sans-serif" font-size="24" fill="#9a3f14">diameter</text>
+<path d="M745 360 710 602H625" fill="none" stroke="#d65a1c" stroke-width="2"/><text x="613" y="610" text-anchor="end" font-family="Arial,sans-serif" font-size="24" fill="#9a3f14">Core specification</text>
+<path d="M745 530H350" fill="none" stroke="#51645a" stroke-width="3" marker-end="url(#arrow)"/><text x="275" y="583" font-family="Arial,sans-serif" font-size="22" fill="#51645a">Confirm unwinding direction</text>
+<text x="50" y="690" font-family="Arial,sans-serif" font-size="18" fill="#51645a">Also specify grade, grammage, roll weight and machine limits.</text>
+</svg>

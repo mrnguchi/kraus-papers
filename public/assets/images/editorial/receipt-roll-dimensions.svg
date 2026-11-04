@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+<title id="title">Receipt roll measurements</title><desc id="desc">Illustrative roll with paper width, outside diameter and core opening labelled. Not to scale.</desc>
+<defs><linearGradient id="paper" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#e3ded4"/></linearGradient><marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse"><path d="M0 0 8 4 0 8" fill="none" stroke="#d65a1c" stroke-width="1.5"/></marker></defs>
+<rect width="1200" height="720" fill="#f2efe7"/><path d="M48 76h1104M48 650h1104" stroke="#d9d3c7"/>
+<text x="50" y="53" font-family="Arial,sans-serif" font-size="17" letter-spacing="3" fill="#716c63">KRAUS PAPERS / MEASUREMENT NOTES</text>
+<ellipse cx="560" cy="567" rx="320" ry="23" fill="#25231f" opacity=".06"/>
+<path d="M300 210 C170 210 170 535 300 535 L710 535 C845 535 845 210 710 210Z" fill="url(#paper)" stroke="#777167" stroke-width="2"/>
+<path d="M300 210 C430 210 430 535 300 535" fill="none" stroke="#c6bfb2" stroke-width="2"/>
+<ellipse cx="710" cy="372" rx="115" ry="163" fill="#fdfcf8" stroke="#777167" stroke-width="2"/>
+<ellipse cx="710" cy="372" rx="100" ry="146" fill="none" stroke="#ded8cc"/><ellipse cx="710" cy="372" rx="85" ry="128" fill="none" stroke="#e8e2d7"/>
+<ellipse cx="710" cy="372" rx="24" ry="37" fill="#a48d6e" stroke="#72614d" stroke-width="2"/><ellipse cx="710" cy="372" rx="14" ry="24" fill="#40382f"/>
+<path d="M300 180v-38m410 38v-38M300 152h410" fill="none" stroke="#d65a1c" stroke-width="2"/><path d="M306 152h398" stroke="#d65a1c" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="505" y="126" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" fill="#9a3f14">Paper width</text>
+<path d="M844 210h55m-55 325h55" stroke="#d65a1c" stroke-width="2"/><path d="M882 218v309" stroke="#d65a1c" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="919" y="361" font-family="Arial,sans-serif" font-size="25" fill="#9a3f14">Outside</text><text x="919" y="394" font-family="Arial,sans-serif" font-size="25" fill="#9a3f14">diameter</text>
+<path d="M710 372 660 602H490" fill="none" stroke="#d65a1c" stroke-width="2"/><text x="480" y="610" text-anchor="end" font-family="Arial,sans-serif" font-size="25" fill="#9a3f14">Core opening</text>
+<text x="50" y="690" font-family="Arial,sans-serif" font-size="18" fill="#716c63">Measure in millimetres. Confirm fit in the printer manual.</text>
+</svg>

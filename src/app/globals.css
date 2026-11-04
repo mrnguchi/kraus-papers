@@ -346,7 +346,7 @@ button:focus-visible {
 }
 
 .hero__image {
-    background: url("/assets/images/hero-bg.jpg") center 55% / cover no-repeat;
+    background: url("/assets/images/hero-bg-1600.webp") center 55% / cover no-repeat;
 }
 
 .hero__overlay {
@@ -439,7 +439,7 @@ p {
     left: 0;
     width: 65%;
     height: 70%;
-    background: url("/assets/images/hero-bg.jpg") center / cover no-repeat;
+    background: url("/assets/images/hero-bg-1600.webp") center / cover no-repeat;
 }
 
 .about__photo--secondary {
@@ -447,7 +447,7 @@ p {
     bottom: 0;
     width: 57%;
     height: 52%;
-    background: url("/assets/images/about-img-2.jpg") center / cover no-repeat;
+    background: url("/assets/images/about-img-2-1200.webp") center / cover no-repeat;
 }
 
 .about__photo--secondary::before {
@@ -808,7 +808,7 @@ p {
     padding: clamp(4rem, 8vw, 7rem) 1.5rem clamp(3.5rem, 6vw, 5.5rem);
     background:
         linear-gradient(110deg, rgba(20, 20, 19, 0.82) 0%, rgba(20, 20, 19, 0.72) 55%, rgba(20, 20, 19, 0.62) 100%),
-        url("/assets/images/about-img-2.jpg") center / cover;
+        url("/assets/images/about-img-2-1200.webp") center / cover;
     color: var(--paper);
 }
 
@@ -2429,6 +2429,7 @@ p {
 .product-card__image img { aspect-ratio: 1; object-fit: contain; }
 .product-detail__image img { aspect-ratio: 1; object-fit: contain; }
 
+@media (max-width:768px) { .hero__image, .about__photo--factory { background-image:url('/assets/images/hero-bg-768.webp'); } }
 /* Native anchor scrolling keeps browser history, focus and touch behaviour intact. */
 html { scroll-behavior: smooth; scroll-padding-top: 7rem; }
 main [id], .legal-page__body section { scroll-margin-top: 0; }
