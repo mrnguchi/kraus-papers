@@ -1,5 +1,7 @@
 # Netlify deployment and local testing
 
+> Email setup update (5 November 2026): use [Microsoft Graph email setup](microsoft-graph-email.md) for the current certificate configuration. It replaces the historical Hostinger SMTP instructions below. No mailbox password is needed for Graph.
+
 The Next.js application now lives in the repository root. If Netlify previously used `nextjs` as its base/package directory, clear that dashboard value. The root netlify.toml now sets base `.`. Public images are directly under public/assets/images and must be committed.
 
 Root-conversion checks passed: optimized build, 13 security/storage groups, 379 HTTP/SEO checks and responsive browser checks. Browser coverage includes native smooth scrolling, section reveal animations and reduced-motion behaviour. The PHP version and old build caches are archived locally in ignored .migration-backup; they are also excluded from Next.js output tracing. The root .env was preserved privately.
