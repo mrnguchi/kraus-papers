@@ -8,11 +8,15 @@ export const dynamic='force-dynamic';
 const cookieName='kraus_session_next';
 const headers={ 'Cache-Control':'private, no-store', 'X-Content-Type-Options':'nosniff' };
 export async function GET(request) {
+ let stage='storage';
  try {
   const db=getDb(), jar=await cookies();
+  stage='rate-limit';
   const retry=await consume(db,'initialize:'+requestIp(request),Date.now(),60);
   if(retry)return NextResponse.json({ok:false,message:'Please wait before reloading the form.'},{status:429,headers:{...headers,'Retry-After':String(retry)}});
+  stage='session';
   const current=await session(db,jar.get(cookieName)?.value)||await newSession(db);
+  stage='submission';
   const id=await issueSubmission(db,current.id);
   const url=new URL(request.url);
   const destination=new URL('/contact.php',request.url);
@@ -22,7 +26,12 @@ export async function GET(request) {
   response.headers.set('Cache-Control','private, no-store');
   response.cookies.set(cookieName,current.id,{httpOnly:true,sameSite:'strict',secure:process.env.NODE_ENV==='production',path:'/',maxAge:86400});
   return response;
- } catch { return NextResponse.json({ok:false,message:'The enquiry form is temporarily unavailable. Please email info@krauspapersgmbh.com.'},{status:503,headers}); }
+ } catch (error) {
+  // Log classification only. Provider error messages may contain credentials or URLs.
+  const known=['MissingBlobsEnvironmentError','BlobsInternalError','TypeError'];
+  console.error('contact_initialize_failed', {stage,kind:known.includes(error?.name)?error.name:'StorageOrRuntimeError'});
+  return NextResponse.json({ok:false,message:'The enquiry form is temporarily unavailable. Please email info@krauspapersgmbh.com.'},{status:503,headers});
+ }
 }
 async function readInput(request) {
  const reader=request.body?.getReader(); let size=0; const parts=[];

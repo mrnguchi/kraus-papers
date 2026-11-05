@@ -1,8 +1,8 @@
 // Run locally after generating the certificate. Never prints credentials.
 import fs from 'node:fs';
 import { X509Certificate, createPrivateKey, createPublicKey } from 'node:crypto';
-const cert = new X509Certificate(fs.readFileSync('storage/mail-auth/kraus-graph-public.crt'));
-const key = fs.readFileSync('storage/mail-auth/kraus-graph-private.pem');
+const cert = new X509Certificate(fs.readFileSync('storage/mail-auth/kraus-graph-public-v2.crt'));
+const key = fs.readFileSync('storage/mail-auth/kraus-graph-private-v2.pem');
 if (!cert.publicKey.export({type:'spki',format:'der'}).equals(createPublicKey(createPrivateKey(key)).export({type:'spki',format:'der'}))) throw Error('Certificate/key mismatch');
 let text = fs.existsSync('.env') ? fs.readFileSync('.env', 'utf8') : '';
 const values = {
