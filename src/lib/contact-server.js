@@ -1,10 +1,8 @@
 import 'server-only';
 import { getStore } from '@netlify/blobs';
 import { MemoryStore } from './contact-store.mjs';
-import nodemailer from 'nodemailer';
 import { isIP } from 'node:net';
 import { Unconfigured, recipient } from './contact-core.mjs';
-import { createGraphSender } from './contact-graph.mjs';
 let database;
 const isNetlify=process.env.KRAUS_DEPLOY_CONTEXT&&process.env.KRAUS_DEPLOY_CONTEXT!=='local';
 export function getDb() {
@@ -17,9 +15,15 @@ export function getDb() {
 }
 export async function sendMail(message) {
  if(isNetlify&&process.env.KRAUS_DEPLOY_CONTEXT!=='production') throw new Unconfigured();
- if(process.env.MAIL_TRANSPORT==='graph') return createGraphSender(process.env)(message);
+ // Keep mail dependencies out of form initialization. Import failures are caught
+ // by the submission handler instead of crashing every contact request.
+ if(process.env.MAIL_TRANSPORT==='graph') {
+  const { createGraphSender } = await import('./contact-graph.mjs');
+  return createGraphSender(process.env)(message);
+ }
  const e=process.env, port=Number(e.MAIL_PORT), from=e.MAIL_FROM_ADDRESS;
  if (e.MAIL_TRANSPORT!=='smtp' || !e.MAIL_HOST || /[\s;/]/.test(e.MAIL_HOST) || !Number.isInteger(port) || port<1 || port>65535 || !['smtps','starttls'].includes(e.MAIL_ENCRYPTION) || !['LOGIN','PLAIN'].includes(e.MAIL_AUTH) || !e.MAIL_USERNAME || !e.MAIL_PASSWORD || !from || !/^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/.test(from)) throw new Unconfigured();
+ const { default: nodemailer } = await import('nodemailer');
  const transport=nodemailer.createTransport({ host:e.MAIL_HOST,port,secure:e.MAIL_ENCRYPTION==='smtps',requireTLS:true, auth:{user:e.MAIL_USERNAME,pass:e.MAIL_PASSWORD},authMethod:e.MAIL_AUTH,tls:{rejectUnauthorized:true},connectionTimeout:15000,greetingTimeout:15000,socketTimeout:20000,logger:false,debug:false });
  try {
   const response=await transport.sendMail({ from:{name:e.MAIL_FROM_NAME||'Kraus Papers',address:from},to:recipient,replyTo:{name:message.name,address:message.email},subject:'Kraus Papers website enquiry',text:`Name: ${message.name}\nEmail: ${message.email}\n${message.product ? 'Product: '+message.product+'\n' : ''}\nMessage:\n${message.message}\n`,disableFileAccess:true,disableUrlAccess:true });
