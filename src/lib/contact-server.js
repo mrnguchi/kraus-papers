@@ -3,10 +3,11 @@ import { getStore } from '@netlify/blobs';
 import { MemoryStore } from './contact-store.mjs';
 import { isIP } from 'node:net';
 import { Unconfigured, recipient } from './contact-core.mjs';
+import { boundedContactStore } from './contact-storage-timeout.mjs';
 let database;
 const isNetlify=process.env.KRAUS_DEPLOY_CONTEXT&&process.env.KRAUS_DEPLOY_CONTEXT!=='local';
 export function getDb() {
- if(isNetlify)return getStore({name:`kraus-contact-v2-${process.env.KRAUS_DEPLOY_CONTEXT==='production'?'production':'preview'}`,consistency:'strong'});
+ if(isNetlify)return boundedContactStore(fetch=>getStore({name:`kraus-contact-v2-${process.env.KRAUS_DEPLOY_CONTEXT==='production'?'production':'preview'}`,consistency:'strong',fetch}));
  if (!database) {
   if(process.env.NODE_ENV!=='production'||process.env.CONTACT_STORE==='memory') database=globalThis[Symbol.for('kraus.contact.memory.v2')]??=new MemoryStore();
   else throw new Error('Shared contact storage is not configured');
